@@ -14,10 +14,10 @@ nav{
     background-color: #eaeaea;
 }
 .nav-logo{
-
+    display: block;
 }
 .nav-item{
-
+    display: block;
 }
 
 /* Home Page */
