@@ -6,12 +6,27 @@
             <title>alexquinn.design</title>
         </head>
         <body>
-        
-        
-        
-        
-        
-        
+            <!-- Navigation-->
+            <nav>
+                <img src="assets/quinn-logo.svg">
+                <a href="alexquinn.design/#projects">PROJECTS</a>
+                <a href="alexquinn.design/photography">PHOTOGRAPHY</a>
+                <a href="alexquinn.design/resume">RESUME</a>
+                <a href="alexquinn.design/#contact">CONTACT</a>
+            </nav>
+            <!-- Main Content -->
+            <main>
+                <section class="home-hero"></section>
+                <section class="projects"></section>
+                <section class="side-projects"></section>
+                <section class="about"></section>
+                <section class="contact"></section>
+            </main>
+            
+            <!-- Footer -->
+            <footer>
+
+            </footer>
         </body>        
     </html>
 </DOCTYPE>
