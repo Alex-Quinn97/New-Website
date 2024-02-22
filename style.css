@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     font-family: Inter-Light;
+    font-size: 16px;
+    color: #0165fc;
 }
 
 /* Navigation */
@@ -13,16 +15,32 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1.5rem 2rem;
-    background-color: #eaeaea;
+    padding: 3rem;
+    background-color: #F0EDE4;
+    border-bottom: #0165fc 2px solid;
 }
 .nav-logo{
     display: block;
 }
-.nav-item{
-    display: block;
+.nav-logo img{
+    width: 6.25rem;
+    height: auto;
 }
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 47%;
+}
+.nav-links a{
+    align-items: center;
+    display: flex;
+    font-family: "Ade Display";
+    font-size: 1.5rem;
+    padding: 0rem 1rem;
+}
+.nav-links a:hover{
 
+}
 /* Home Page */
 
 
@@ -59,8 +77,14 @@ nav{
 
 
 /* Font Faces */
+/* Ade Display */
+@font-face {
+    font-family: 'Ade Display';
+    src: url(Fonts/AdeDisplay.otf) format("opentype");
+}
+
 /* Inter */
 @font-face {
-    font-family: Inter-Light;
-    src: url(Fonts\Inter-Light.ttf);
+    font-family: 'Inter-Light';
+    src: url(Fonts/Inter-Light.ttf) format("truetype");
 }
