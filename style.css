@@ -1,6 +1,9 @@
 /* Universal */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Inter-Light;
 }
 
 /* Navigation */
@@ -21,3 +24,43 @@ nav{
 }
 
 /* Home Page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Font Faces */
+/* Inter */
+@font-face {
+    font-family: Inter-Light;
+    src: url(Fonts\Inter-Light.ttf);
+}
