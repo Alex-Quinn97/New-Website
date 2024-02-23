@@ -39,14 +39,25 @@ nav{
     padding: 0rem 1rem;
 }
 .nav-links a:hover{
-
+    /*work on getting the hover state right. This styling is just so VS code doesn't yell at me*/
+    color: #F0EDE4;
 }
 /* Home Page */
-
-
-
-
-
+.home-hero{
+    background:#F0EDE4; /* Change this to be under the section tag instead of each class once everything is done */
+}
+.projects{
+    background:#F0EDE4;
+}
+.side-projects{
+    background:#0165fc;
+}
+.about{
+    background:#F0EDE4;
+}
+.contact{
+    background:#F0EDE4;
+}
 
 
 
