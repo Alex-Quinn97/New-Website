@@ -23,8 +23,9 @@ nav{
     display: block;
 }
 .nav-logo img{
-    width: 6.25rem;
+    width: 6.5rem;
     height: auto;
+
 }
 .nav-links{
     display: flex;
