@@ -41,7 +41,34 @@
                           </text>
                         </svg>
                     <div class="project-list">
-                        <p>x</p>
+                        <div class="project clickable-div" data-url="google.com">
+                            <!-- Original image with blue stroke -->
+                            <img src="Assets/number-1.svg" alt="Number one." class="original-number">
+                            <!-- Image with chartreuse stroke (hidden by default) -->
+                            <img src="Assets/number-1-alt.svg" alt="Number one." class="hover-number">
+                            <p class="project-name">GRADUATE COLLEGE WEBSITE REDESIGN</p>
+                            <p class="project-tags">Web Design | User Research | HTML & CSS | Adobe Experience Manager</p>
+                        </div>
+                        <div class="project">
+                            <img src="Assets/number-2.svg">
+                            <p class="project-name">NEW GRADUATE PORTAL</p>
+                            <p class="project-tags">Web Design | HTM &CSS | Figma | Photography</p>
+                        </div>
+                        <div class="project">
+                            <img src="Assets/number-3.svg">
+                            <p class="project-name">SERVICE DESIGN BLUEPRINTING</p>
+                            <p class="project-tags">Web Design | User Research | HTML & CSS | Adobe Experience Manager</p>
+                        </div>
+                        <div class="project">
+                            <img src="Assets/number-4.svg">
+                            <p class="project-name">OU MARKETING & PROMO MATERIAL</p>
+                            <p class="project-tags">Illustrator | InDesign | Procreate | Photoshop</p>
+                        </div>
+                        <div class="project">
+                            <img src="Assets/number-5.svg">
+                            <p class="project-name">TRAVALLURE</p>
+                            <p class="project-tags">UI/UX | User Research | Journey Mapping | Product Design</p>
+                        </div>
                     </div>
                 </section>
                 <section class="side-projects">
@@ -59,6 +86,22 @@
             <footer>
 
             </footer>
+
+            <!-- Javascript -->
+            <script>
+                // Get all div elements with the class 'clickable-div'
+                var divElements = document.querySelectorAll(".clickable-div");
+
+                // Add a click event listener to each div
+                divElements.forEach(function(div) {
+                    div.addEventListener("click", function() {
+                        // Retrieve the URL from the 'data-url' attribute
+                        var url = this.getAttribute("data-url");
+                        // Redirect to the specified URL
+                        window.location.href = url;
+                    });
+                });
+            </script>
         </body>        
     </html>
 </DOCTYPE>
