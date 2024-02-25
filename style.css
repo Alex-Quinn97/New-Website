@@ -7,6 +7,35 @@
     font-size: 16px;
     color: #0165fc;
 }
+h1{
+    font-family: "ZTBOskon90s Light Italic";
+    font-size: 5.313rem;
+    font-weight: lighter;
+}
+h1 span{
+    font-size: 4rem;
+}
+h2{
+    font-family: "ZTBOskon90s";
+    font-size: 1.875rem;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+/* Utility */
+.no-italics{
+    font-style: normal;
+}
+
+
 
 /* Navigation */
 nav{
@@ -30,7 +59,6 @@ nav{
 .nav-links{
     display: flex;
     justify-content: space-between;
-    width: 47%;
 }
 .nav-links a{
     align-items: center;
@@ -47,6 +75,38 @@ nav{
 .home-hero{
     background:#F0EDE4; /* Change this to be under the section tag instead of each class once everything is done */
 }
+.name-hero-container{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+.name-hero-container img{
+    max-width: 80rem;
+    height: auto;
+    margin: 5rem 3rem 3rem 3rem;
+}
+.hero-subhead{
+    margin-left: 3rem;
+}
+
+/* Project Marquee */
+svg{
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: Inter;
+    font-weight: normal;
+    fill: #0165FC;
+    margin-top: 5rem;
+}
+
+svg path {
+    fill: transparent;
+}
+.marquee-container{
+}
+
+
 .projects{
     background:#F0EDE4;
 }
@@ -99,4 +159,14 @@ nav{
 @font-face {
     font-family: 'Inter-Light';
     src: url(Fonts/Inter-Light.ttf) format("truetype");
+}
+
+/* ZTBros Oskon 90s */
+@font-face {
+    font-family: 'ZTBOskon90s';
+    src: url(Fonts/ZTBrosOskon90s-Regular.otf) format("opentype");
+}
+@font-face {
+    font-family: 'ZTBOskon90s Light Italic';
+    src: url(Fonts/ZTBrosOskon90s-LightItalic.otf) format("opentype");
 }
