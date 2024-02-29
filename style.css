@@ -1,15 +1,18 @@
 /* Universal */
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    color: #0165fc;
     font-family: Inter-Light;
     font-size: 16px;
-    color: #0165fc;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F0EDE4;
 }
 h1{
     font-family: "ZTBOskon90s Light Italic";
-    font-size: 5.313rem;
+    font-size: 4rem;
     font-weight: lighter;
 }
 h1 span{
@@ -34,7 +37,9 @@ h2{
 .no-italics{
     font-style: normal;
 }
-
+.hr-white{
+    border: 1px solid #F0EDE4;
+}
 
 
 /* Navigation */
@@ -44,7 +49,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 2rem;
     background-color: #F0EDE4;
     border-bottom: #0165fc 2px solid;
 }
@@ -52,7 +57,7 @@ nav{
     display: block;
 }
 .nav-logo img{
-    width: 6.5rem;
+    width: 6rem;
     height: auto;
 
 }
@@ -72,16 +77,13 @@ nav{
     color: #F0EDE4;
 }
 /* Home Page */
-.home-hero{
-    background:#F0EDE4; /* Change this to be under the section tag instead of each class once everything is done */
-}
 .name-hero-container{
     display: block;
     height: auto;
     width: 100%;
 }
 .name-hero-container img{
-    max-width: 80rem;
+    max-width: 50rem;
     height: auto;
     margin: 5rem 3rem 3rem 3rem;
 }
@@ -113,7 +115,7 @@ svg path {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    height: 10.938rem;
+    height: 11.5rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
@@ -159,16 +161,55 @@ svg path {
 }
 .project-tags{
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     grid-column-start: 2;
     grid-column-end: 6;
 }
 
 
-
+/* Side Projects */
 .side-projects{
-    background:#0165fc;
+    background:#0165FC;
 }
+.side-projects-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    padding-bottom: 3rem;
+    width: 85%;
+}
+.side-project{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 0rem 1.75rem 0rem 1.75rem;
+}
+
+.side-project h3{
+    align-items: center;
+    color: #F0EDE4;
+    display: flex;
+    font-family: "Ade Display";
+    font-size: 2.5rem;
+}
+.side-project p{
+    color: #F0EDE4;
+}
+.tag-container{
+    margin-top: 0.5rem;
+}
+.tag-container div{
+    background-color: #F0EDE4;
+    border: 1px solid #F0EDE4;
+    border-radius: 2rem; 
+    /*color: #F0EDE4;*/
+    float: left;
+    font-family: "ZTBOskon90s";
+    font-size: 1.25rem;
+    margin: 0.5rem 0.5rem 0rem 0rem;
+    padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+}
+
+
 .about{
     background:#F0EDE4;
 }
