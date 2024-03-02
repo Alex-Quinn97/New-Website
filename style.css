@@ -40,7 +40,9 @@ h2{
 .hr-white{
     border: 1px solid #F0EDE4;
 }
-
+.mb-3{
+    margin-bottom: 3rem;
+}
 
 /* Navigation */
 nav{
@@ -170,6 +172,26 @@ svg path {
 /* Side Projects */
 .side-projects{
     background:#0165FC;
+    padding-top: 5rem;
+}
+.side-projects-header{
+    align-items: center;
+    color: #0165FC;
+    display:flex;
+    font-family: "Ade Display";
+    font-size: 25rem;
+    justify-content: center;
+    overflow-x: hidden;
+    text-shadow: 0 0 2px #F0EDE4, 0 0 2px #F0EDE4, 0 0 2px #F0EDE4, 0 0 1px #F0EDE4;
+}
+.side-projects-subheader{
+    align-items: center;
+    color: #F0EDE4;
+    display: flex;
+    font-family: "ZTBOskon90s Light Italic";
+    font-size: 2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 .side-projects-container{
     display: grid;
@@ -183,19 +205,24 @@ svg path {
     grid-template-rows: repeat(3, 1fr);
     padding: 0rem 1.75rem 0rem 1.75rem;
 }
-
 .side-project h3{
     align-items: center;
-    color: #F0EDE4;
     display: flex;
+}
+.side-project h3>a{
+    color: #F0EDE4;
     font-family: "Ade Display";
     font-size: 2.5rem;
+    text-decoration: none;
+}
+.side-project h3>a:hover{
+
 }
 .side-project p{
     color: #F0EDE4;
 }
 .tag-container{
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 .tag-container div{
     background-color: #F0EDE4;
