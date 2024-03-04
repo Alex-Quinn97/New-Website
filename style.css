@@ -40,8 +40,8 @@ h2{
 .hr-white{
     border: 1px solid #F0EDE4;
 }
-.mb-3{
-    margin-bottom: 3rem;
+.mb-1{
+    margin-bottom: 1rem;
 }
 
 /* Navigation */
@@ -94,19 +94,34 @@ nav{
 }
 
 /* Project Marquee */
-svg{
-    font-size: 1rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-family: Inter;
-    font-weight: normal;
-    fill: #0165FC;
-    margin-top: 5rem;
-    margin-bottom: 3rem;
+#marquee-container {
+    overflow: hidden;
+    width: 100%;
+    height: 5rem;
+    border-top: 1px solid #0165FC; /* Top border */
+    border-bottom: 1px solid #0165FC; /* Bottom border */
+    margin: 2rem 0rem 2rem 0rem;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
 }
-svg path {
-    fill: transparent;
+  
+#marquee-content {
+    vertical-align: middle;
+    font-size: 2rem;
+    white-space: nowrap; /* Prevents text from wrapping */
+    animation: marquee 40s linear infinite; /* Adjust duration as needed */
 }
+  
+@keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+  
 .projects{
     background:#F0EDE4;
 }
@@ -193,6 +208,10 @@ svg path {
     justify-content: center;
     margin-bottom: 2rem;
 }
+.side-project-header-container {
+    transition: background-image .3s ease-in-out; /* Adding transition effect */
+    background-size: cover; /* Ensure the background image covers the container */
+}
 .side-projects-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -205,9 +224,14 @@ svg path {
     grid-template-rows: repeat(3, 1fr);
     padding: 0rem 1.75rem 0rem 1.75rem;
 }
+.side-project-header-container{
+    background-image: none;
+}
 .side-project h3{
     align-items: center;
     display: flex;
+    margin: 1rem 0rem .5rem 0rem;
+    transition: transform 0.5s ease;
 }
 .side-project h3>a{
     color: #F0EDE4;
@@ -215,8 +239,8 @@ svg path {
     font-size: 2.5rem;
     text-decoration: none;
 }
-.side-project h3>a:hover{
-
+.side-project h3:hover{
+    transform: translateY(-10px);
 }
 .side-project p{
     color: #F0EDE4;
