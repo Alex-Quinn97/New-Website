@@ -100,17 +100,15 @@ nav{
     height: 5rem;
     border-top: 1px solid #0165FC; /* Top border */
     border-bottom: 1px solid #0165FC; /* Bottom border */
-    margin: 2rem 0rem 2rem 0rem;
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Horizontally center the content */
+    margin: 5rem 0rem 2rem 0rem;
 }
   
 #marquee-content {
-    vertical-align: middle;
-    font-size: 2rem;
-    white-space: nowrap; /* Prevents text from wrapping */
     animation: marquee 40s linear infinite; /* Adjust duration as needed */
+    font-size: 2rem;
+    padding-top: 1rem;
+    vertical-align: middle;
+    white-space: nowrap; /* Prevents text from wrapping */
 }
   
 @keyframes marquee {
@@ -209,8 +207,8 @@ nav{
     margin-bottom: 2rem;
 }
 .side-project-header-container {
-    transition: background-image .3s ease-in-out; /* Adding transition effect */
     background-size: cover; /* Ensure the background image covers the container */
+    transition: background-image 10s ease-in-out; /* Adding transition effect */
 }
 .side-projects-container{
     display: grid;

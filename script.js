@@ -23,22 +23,15 @@ function moveTextAlongCurve() {
   
   // Start the animation
   animate();
+
+  moveTextAlongCurve();
+
+
+  // Start the animation
+  moveContent();
 }
-
 // Start moving the text along the curve
-moveTextAlongCurve();
 
-
-// Start moving the text along the curve
-moveTextAlongCurve();
-
-
-// Start moving the text along the curve
-moveTextAlongCurve();
-
-
-// Start the animation
-moveContent();
 
 // Get all div elements with the class 'clickable-div'
 var divElements = document.querySelectorAll(".clickable-div");
