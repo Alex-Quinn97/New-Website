@@ -51,9 +51,10 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1.5rem;
     background-color: #F0EDE4;
     border-bottom: #0165fc 2px solid;
+    z-index:1;
 }
 .nav-logo{
     display: block;
@@ -261,16 +262,17 @@ nav{
 /*About Me*/
 .about{
     background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
-    url(Assets/ocean-man.jpg);
+    url(Assets/about-me.jpg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 100rem;
 }
 .about-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
-    padding-top: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     width: 85%;
 }
 .about-me-title{
@@ -281,18 +283,80 @@ nav{
 .about-me-paragraph{
     color: #F0EDE4;
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     grid-column: 1;
     grid-row: 2;
     padding-right: 10rem;
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 .contact{
     background:#F0EDE4;
+    margin-bottom: 25rem;
 }
-
-
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    margin: 3rem auto 0 auto;
+    width: 85%;
+}
+.contact-header{
+    font-family: "ZTBOskon90s Light Italic";
+    font-size: 3.5rem;
+    font-weight: lighter;
+    grid-column: 1/3;
+}
+.form-container{
+    display: flex;
+    flex-wrap:wrap;
+    grid-column: 1/3;
+    margin-top: 3rem;
+}
+form{
+    width: 100%;
+}
+label{ 
+    border: 0px;
+    display: flex;
+    margin-bottom: .75rem;
+    width: 100%;
+} 
+.form-container input{
+    border: 0;
+    display: flex;
+    margin-bottom: 1.5rem;
+    padding: .5rem;
+    width: 80%;
+}
+.form-container textarea {  
+    border: 0px;
+    display: flex;
+    width: 80%; 
+    padding: 10px; 
+    resize: none; 
+    height: 10rem; 
+} 
+.form-container button{ 
+    border: 0px; 
+    font-family: 'Inter-Light';
+    margin-top: 15px; 
+    padding: 10px; 
+    text-align: center; 
+    width: 25%; 
+    background:#0165FC; 
+    color:#F0EDE4; 
+    border-radius: 25px; 
+    cursor: pointer; 
+} 
+#error_message { 
+    color: salmon;
+    margin-bottom: 20px; 
+    padding: 0px; 
+    text-align: center; 
+    font-size: 14px; 
+    text-align: left;
+    transition: all 0.5s ease; 
+}
 
 
 
