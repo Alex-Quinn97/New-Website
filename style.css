@@ -258,10 +258,36 @@ nav{
     padding: 0.1rem 0.5rem 0.1rem 0.5rem;
 }
 
-
+/*About Me*/
 .about{
-    background:#F0EDE4;
+    background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
+    url(Assets/ocean-man.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100rem;
 }
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    padding-top: 5rem;
+    width: 85%;
+}
+.about-me-title{
+    color: #F0EDE4;
+    font-family: 'Ade Display';
+    font-size: 5.25rem;
+}
+.about-me-paragraph{
+    color: #F0EDE4;
+    display: flex;
+    font-size: 1.5rem;
+    grid-column: 1;
+    grid-row: 2;
+    padding-right: 10rem;
+    padding-top: 5rem;
+}
+
 .contact{
     background:#F0EDE4;
 }
