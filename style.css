@@ -43,6 +43,18 @@ h2{
 .mb-1{
     margin-bottom: 1rem;
 }
+.ml-3{
+    margin-left:3rem;
+}
+.mr-3{
+    margin-right:3rem;
+}
+.mt-3{
+    margin-top:3rem;
+}
+.pt-5{
+    padding-top: 5rem;
+}
 
 /* Navigation */
 nav{
@@ -67,6 +79,7 @@ nav{
 .nav-links{
     display: flex;
     justify-content: space-between;
+    
 }
 .nav-links a{
     align-items: center;
@@ -74,10 +87,25 @@ nav{
     font-family: "Ade Display";
     font-size: 1.5rem;
     padding: 0rem 1rem;
+    position: relative;
+    text-decoration: none;
 }
-.nav-links a:hover{
-    /*work on getting the hover state right. This styling is just so VS code doesn't yell at me*/
-    color: #F0EDE4;
+.nav-links a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #0165FC;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+.nav-links a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
 }
 /* Home Page */
 .name-hero-container{
@@ -186,14 +214,13 @@ nav{
 /* Side Projects */
 .side-projects{
     background:#0165FC;
-    padding-top: 5rem;
 }
 .side-projects-header{
     align-items: center;
     color: #0165FC;
     display:flex;
     font-family: "Ade Display";
-    font-size: 25rem;
+    font-size: 17rem;
     justify-content: center;
     overflow-x: hidden;
     text-shadow: 0 0 2px #F0EDE4, 0 0 2px #F0EDE4, 0 0 2px #F0EDE4, 0 0 1px #F0EDE4;
@@ -292,7 +319,7 @@ nav{
 
 .contact{
     background:#F0EDE4;
-    margin-bottom: 25rem;
+    margin-bottom: 5rem;
 }
 .contact-container{
     display: grid;
@@ -357,11 +384,29 @@ label{
     text-align: left;
     transition: all 0.5s ease; 
 }
+.social-links{
+    display: flex;
+    grid-column: 3/5;
+}
+.left-star{
+    width: 14rem;
+    height: auto;
+}
+.right-star{
+    display: flex;
+    grid-row: 2;
+    width: 10rem;
+    height: auto;
+}
 
-
-
-
-
+.rotation360 {
+    -webkit-animation:spin 25s linear infinite;
+    -moz-animation:spin 25s linear infinite;
+    animation:spin 25s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 
 
