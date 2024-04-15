@@ -23,7 +23,9 @@ h2{
     font-size: 1.875rem;
     font-weight: lighter;
 }
-
+li{
+    list-style-type: none;
+}
 
 
 
@@ -79,36 +81,30 @@ nav{
     height: auto;
 
 }
-.nav-links{
-    display: flex;
-    justify-content: space-between;
-    
-}
-.nav-links a{
+.nav-menu{
     align-items: center;
     display: flex;
+    justify-content: space-between;
+}
+.nav-menu li a{
     font-family: "Ade Display";
     font-size: 1.5rem;
     padding: 0rem 1rem;
     position: relative;
     text-decoration: none;
 }
-.nav-links a::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    border-radius: 4px;
-    background-color: #0165FC;
-    bottom: 0;
-    left: 0;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
+
+.hamburger{
+    display: none;
 }
-.nav-links a:hover::after{
-    transform-origin: left;
-    transform: scaleX(1);
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #0165FC;
 }
 /* Home Page */
 .name-hero-container{
@@ -170,15 +166,6 @@ nav{
     transition: 300ms ease-in-out;
     width: 80%;
 }
-.project:hover{
-    background-color: black;
-    border: 1px solid #DFFF00;
-    cursor: pointer;
-    transition: 300ms ease-in-out;
-}
-.project:hover p{
-    color: #DFFF00;
-}
 .project img{
     grid-row-end: span 2;
     height: auto;
@@ -187,15 +174,6 @@ nav{
 }
 /* Hide the hover number by default */
 .hover-number {
-    display: none;
-}
-
-/* When hovering over the container, show the hover number and hide the original number */
-.project.clickable-div:hover .hover-number {
-    display: block;
-}
-
-.project.clickable-div:hover .original-number {
     display: none;
 }
 .project-name{
@@ -212,8 +190,6 @@ nav{
     grid-column-start: 2;
     grid-column-end: 6;
 }
-
-
 /* Side Projects */
 .side-projects{
     background:#0165FC;
@@ -476,7 +452,128 @@ label{
 
 
 
+/*Media queries*/
+@media only screen and (max-width: 480px)  {
+    .name-hero-container img{
+        margin: 2rem;
+    }
+    .hero-subhead{
+       margin: 0 1.25rem 0rem 1.25rem;
+    }
+    .hero-subhead h1{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+     }
+     .hero-subhead h1 span{
+        font-size: 2rem;
+     }
+     .hero-title-crawl{
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+     }
 
+     .project{
+        width: 95%;
+        grid-template-columns: none;
+     }
+     .project img{
+        display: none;
+     }
+    .project-name{
+        font-size: 2.25rem;
+        margin-left: 1rem;
+        padding-right: 1rem;
+    }
+    .project-tags{
+        font-size: 1rem;
+        margin-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        align-items: flex-start;
+        position: fixed;
+        left: -100%;
+        top: 6rem;
+        height: 100%;
+        flex-direction: column;
+        background-color: #F0EDE4;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        justify-content: flex-start;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-top: .75rem;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media only screen and (max-width: 1024px){
+
+}
+@media only screen and (min-width: 1024px){
+    .nav-menu li a::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        border-radius: 4px;
+        background-color: #0165FC;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+    }
+    .nav-menu li a:hover::after{
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+    .project:hover{
+        background-color: black;
+        border: 1px solid #DFFF00;
+        cursor: pointer;
+        transition: 300ms ease-in-out;
+    }
+    .project:hover p{
+        color: #DFFF00;
+    }
+    /* When hovering over the container, show the hover number and hide the original number */
+.project.clickable-div:hover .hover-number {
+    display: block;
+}
+
+.project.clickable-div:hover .original-number {
+    display: none;
+}
+}
 
 /* Font Faces */
 /* Ade Display */
