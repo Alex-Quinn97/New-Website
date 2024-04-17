@@ -226,7 +226,7 @@ nav{
 }
 .side-project-header-container {
     background-size: cover; /* Ensure the background image covers the container */
-    transition: background-image 10s ease-in-out; /* Adding transition effect */
+    transition: background-image 1s ease-in-out; /* Adding transition effect */
 }
 .side-projects-container{
     display: grid;
@@ -654,7 +654,7 @@ label{
         background-color: black;
         border: 1px solid #DFFF00;
         cursor: pointer;
-        transition: 30ms ease-in-out;
+        transition: 300ms ease-in-out;
     }
     .project:hover p{
         color: #DFFF00;
