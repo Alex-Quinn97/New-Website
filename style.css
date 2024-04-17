@@ -40,7 +40,18 @@ li{
     font-style: normal;
 }
 .hr-white{
+    border: 1px solid #F0EDE4; 
+}
+.hr-white-hidden{
     border: 1px solid #F0EDE4;
+    display: none; 
+}
+.hr-blue-hidden{
+    display: hidden;
+    background-color: #0165fc;
+    border: 0 none;
+    color: #0165FC;
+    height: 1px;
 }
 .mb-1{
     margin-bottom: 1rem;
@@ -244,9 +255,7 @@ nav{
     font-size: 2.5rem;
     text-decoration: none;
 }
-.side-project h3:hover{
-    transform: translateY(-10px);
-}
+
 .side-project p{
     color: #F0EDE4;
 }
@@ -490,6 +499,85 @@ label{
         padding-right: 1rem;
         padding-top: 1rem;
     }
+    .side-projects-header{
+        font-size: 7rem;
+    }
+    .side-projects-subheader{
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0 .25rem 0 .25rem;
+    }
+    .side-projects-container{
+        grid-template-columns: 1fr;
+    }
+    .side-project{
+        margin-bottom: 2rem;
+    }
+    .tag-container{
+        margin-bottom: 1rem;
+    }
+    .hr-white-hidden{
+        display: block; 
+    }
+    .about{
+        background:linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.90) 100%), url(Assets/about-me.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 70%;
+    }
+    .about-container{
+        padding-top: 5rem;
+        padding-bottom: 3rem;;
+    }
+    .about-me-paragraph{
+        grid-column: 1/3;
+        padding-right: 0;
+        padding-top: 1rem;
+    }
+    .contact{
+        margin-bottom: 1rem;
+    }
+    .contact-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+    .contact-header{
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 2rem;
+    }
+    .form-container{
+        grid-column: 1;
+        grid-row: 2;
+        margin-bottom: 2rem;
+    }
+    .form-container input{
+        width: 90%;
+    }
+    .form-container textarea{
+        width: 90%;
+    }
+    .social-links{
+        grid-column: 1;
+        grid-row: 3;
+        width: 100%;
+    }
+    #instagram-over-blue-sporkle{
+        width: 28%;
+        margin: 3.5rem;
+    }
+    #linkedin-over-blue-sporkle{
+        width: 25%;
+        margin: 4.65rem;
+    }
+    .hr-blue-hidden{
+        display: block;
+        margin-top: 3rem;
+        height: 10px;
+    }
+    #linkedin-social-p{
+        padding-right: 3rem;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -507,29 +595,28 @@ label{
         transition: 0.3s;
         justify-content: flex-start;
     }
-
+    .nav-item{
+        margin: 2rem 1rem;
+        text-align: left;
+    }
+    .nav-menu li a{
+        font-size: 2.8rem;
+        padding: 0;
+    }
     .nav-menu.active {
         left: 0;
     }
-
-    .nav-item {
-        margin: 2.5rem 0;
-    }
-
     .hamburger {
         display: block;
         cursor: pointer;
         margin-top: .75rem;
     }
-
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
-
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
@@ -569,6 +656,9 @@ label{
 .project.clickable-div:hover .hover-number {
     display: block;
 }
+    .side-project h3:hover{
+        transform: translateY(-10px);
+    }
 
 .project.clickable-div:hover .original-number {
     display: none;
