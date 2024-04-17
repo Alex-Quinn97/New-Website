@@ -654,7 +654,7 @@ label{
         background-color: black;
         border: 1px solid #DFFF00;
         cursor: pointer;
-        transition: 300ms ease-in-out;
+        transition: 30ms ease-in-out;
     }
     .project:hover p{
         color: #DFFF00;
