@@ -560,22 +560,7 @@ label{
         grid-row: 3;
         width: 100%;
     }
-    #instagram-over-blue-sporkle{
-        width: 28%;
-        margin: 3.5rem;
-    }
-    #linkedin-over-blue-sporkle{
-        width: 25%;
-        margin: 4.65rem;
-    }
-    .hr-blue-hidden{
-        display: block;
-        margin-top: 3rem;
-        height: 10px;
-    }
-    #linkedin-social-p{
-        padding-right: 3rem;
-    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -620,6 +605,22 @@ label{
     }
     .side-projects-container{
         grid-template-columns: 1fr;
+    }
+    #instagram-over-blue-sporkle{
+        width: 28%;
+        margin: 3.5rem;
+    }
+    #linkedin-over-blue-sporkle{
+        width: 25%;
+        margin: 4.65rem;
+    }
+    .hr-blue-hidden{
+        display: block;
+        margin-top: 3rem;
+        height: 10px;
+    }
+    #linkedin-social-p{
+        padding-right: 3rem;
     }
 }
 
