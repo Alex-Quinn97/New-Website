@@ -508,9 +508,6 @@ label{
         padding: 0 .25rem 0 .25rem;
     }
     
-    .side-project{
-        margin-bottom: 2rem;
-    }
     .tag-container{
         margin-bottom: 1rem;
     }
@@ -605,6 +602,10 @@ label{
     }
     .side-projects-container{
         grid-template-columns: 1fr;
+    }
+    .side-project{
+        margin-bottom: 2rem;
+        padding: 0;
     }
     #instagram-over-blue-sporkle{
         width: 28%;
