@@ -507,9 +507,7 @@ label{
         text-align: center;
         padding: 0 .25rem 0 .25rem;
     }
-    .side-projects-container{
-        grid-template-columns: 1fr;
-    }
+    
     .side-project{
         margin-bottom: 2rem;
     }
@@ -619,6 +617,9 @@ label{
     }
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+    .side-projects-container{
+        grid-template-columns: 1fr;
     }
 }
 
