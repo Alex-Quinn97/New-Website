@@ -47,7 +47,7 @@ li{
     display: none; 
 }
 .hr-blue-hidden{
-    display: hidden;
+    display: none;
     background-color: #0165fc;
     border: 0 none;
     color: #0165FC;
