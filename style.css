@@ -49,8 +49,11 @@ li{
     border: 1px solid #F0EDE4; 
 }
 .hr-white-hidden{
-    border: 1px solid #F0EDE4;
-    display: none; 
+    display: none;
+    background-color: #F0EDE4;
+    border: 0 none;
+    color: #F0EDE4;
+    height: 1px;
 }
 .hr-blue-hidden{
     display: none;
@@ -108,8 +111,8 @@ nav{
 }
 .nav-menu li a{
     font-family: "Ade Display";
-    font-size: 1.5rem;
-    padding: 0rem 1rem;
+    font-size: 1.25rem;
+    padding: 0rem 1.5rem;
     position: relative;
     text-decoration: none;
 }
@@ -553,8 +556,24 @@ label{
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+    .hero-title-crawl{
+        padding:2rem 15rem 0rem 0rem;
+    }
     .project img{
         width: 7.5rem;
+    }
+    .side-projects-container{
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+    .side-project{
+        margin-bottom: 1rem;
+    }
+    .hr-white-hidden{
+        display: block; 
+    }
+    .tag-container{
+        margin-bottom: 1rem;
     }
 }
 
@@ -588,9 +607,6 @@ label{
     }
     .tag-container{
         margin-bottom: 1rem;
-    }
-    .hr-white-hidden{
-        display: block; 
     }
     #instagram-over-blue-sporkle{
         width: 28%;
