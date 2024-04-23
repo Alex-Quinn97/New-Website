@@ -455,9 +455,18 @@ label{
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-
-
-
+.friends{
+    width: 90%;
+}
+.friend-card{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 30rem;
+}
+.friend-card img{
+    width: 30rem;
+    height: auto;
+}
 
 
 
@@ -504,16 +513,21 @@ label{
         color: #DFFF00;
     }
     /* When hovering over the container, show the hover number and hide the original number */
-.project.clickable-div:hover .hover-number {
-    display: block;
-}
-    .side-project h3:hover{
-        transform: translateY(-10px);
+    .project.clickable-div:hover .hover-number {
+        display: block;
+    }
+        .side-project h3:hover{
+            transform: translateY(-10px);
+        }
+
+    .project.clickable-div:hover .original-number {
+        display: none;
     }
 
-.project.clickable-div:hover .original-number {
-    display: none;
-}
+    .friends{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
 }
 
 @media only screen and (max-width: 1024px){
