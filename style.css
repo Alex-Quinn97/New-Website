@@ -83,6 +83,17 @@ li{
 .pt-5{
     padding-top: 5rem;
 }
+.btn-blue{
+    color: #F0EDE4;
+    background-color: #0165FC;
+    border: none;
+    font-family: "Inter-Bold";
+    height: auto;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30px;
+}
 
 /* Navigation */
 nav{
@@ -455,30 +466,76 @@ label{
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
+.friends-hero{
+    width: 65%;
+    margin-left: 2.5%;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+.page-header{
+    font-family: "Ade Display";
+    font-size: 8rem;
+}
 .friends{
     width: 90%;
+    margin: auto;
+    margin-bottom: 15rem;
 }
 .friend-card{
-    grid-template-columns: 1fr;
+    display: flex;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
-    width: 30rem;
+    margin: auto;
+    width: 75%;
+    max-height: 285px;
+    margin-top: 2rem;
 }
-.friend-card img{
-    width: 30rem;
-    height: auto;
+.friend-card h2{
+    color: #F0EDE4;
+    font-family: "Ade Display";
+    font-size: 4rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.friend-card p{
+    color: #F0EDE4;
+    padding-left: 1rem;
+    padding-right: 5rem;
+}
+.friend-info{
+    background-color: #0165FC;
+    border-radius: 0 0 100px 0;/* Curve only the top-left corner */
+    width: 70%;
+}
+.friend-info h2{
+    width: 50%;
+}
+.friend-info .tag-container{
+    padding-left: 1rem;
+}
+.friend-image {
+    position: relative;
+    width: 30%;
+}
+.friend-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px 0 0 0; /* Curve only the top-left corner */
+}
+.friend-image .btn-blue {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 10rem;
+    font-size: .75rem;
+} 
+.friend-image .btn-blue:hover {
+    background-color: black;
+}
 
 
 
@@ -523,7 +580,6 @@ label{
     .project.clickable-div:hover .original-number {
         display: none;
     }
-
     .friends{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
@@ -588,6 +644,19 @@ label{
     }
     .tag-container{
         margin-bottom: 1rem;
+    }
+    .friends-hero{
+        width: 68%;
+    }
+    .friends{
+        width: 95%;
+    }
+    .friend-card{
+        width: 95%;
+        max-height: 240px;
+    }
+    .friend-info h2{
+        width: 100%;
     }
 }
 
@@ -685,7 +754,19 @@ label{
         grid-row: 3;
         width: 100%;
     }
-
+    .friends-hero{
+        width: 90%;
+    }
+    .friend-info h2{
+        font-size: 3rem;
+    }
+    .friend-info p{
+        font-size: .85rem;
+    }
+    .friend-image .btn-blue{
+        width: 9rem;
+        font-size: .65rem;
+    }
 }
 
 @media only screen and (max-width: 480px)  {
@@ -732,7 +813,40 @@ label{
         text-align: center;
         padding: 0 .25rem 0 .25rem;
     }
+    .page-header{
+        font-size: 5rem;
+    }
+    .friends-hero{
+        width: 90%;
+    }
+    .friend-info{
+        width: 50%;
+        border-radius: 0 0 50px 0;
+    }
+    .friend-info h2{
+        font-size: 2rem;
+    }
+    .friend-info p{
+        display: none;
+    }
+    .friend-image{
+        width: 50%;
+    }
+    .friend-image img{
+        border-radius: 0 0 50px 0;
+    }
+    .friend-image .btn-blue{
+        width: 9rem;
+        font-size: .65rem;
+    }
 }
+
+
+
+
+
+
+
 
 /* Font Faces */
 /* Ade Display */
@@ -745,6 +859,10 @@ label{
 @font-face {
     font-family: 'Inter-Light';
     src: url(Fonts/Inter-Light.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url(Fonts/Inter-Bold.ttf) format("truetype");
 }
 
 /* ZTBros Oskon 90s */
