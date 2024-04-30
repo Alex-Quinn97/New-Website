@@ -10,6 +10,9 @@ function mobileMenu() {
 }
 
 //Project Marquee
+// Check if the current page URL matches the "home" page URL
+if (window.location.pathname === 'https://alexquinn.design/' || window.location.pathname === '/') {
+    // Execute script only on the "home" page
 // Get the SVG elements
 const textPath = document.getElementById('marquee-content').querySelector('textPath');
 
@@ -42,6 +45,10 @@ function moveTextAlongCurve() {
   moveContent();
 }
 // Start moving the text along the curve
+
+} else {
+
+}
 
 
 // Get all div elements with the class 'clickable-div'
@@ -117,3 +124,24 @@ function validate() {
 		return true;}}
 
 
+//Faders
+document.addEventListener("DOMContentLoaded", function() {
+    const appearOptions = {
+        threshold: .5
+    };
+    const faders = document.querySelectorAll(".fade-in");
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting){
+                return;
+            } else {
+                entry.target.classList.add("appear");
+                appearOnScroll.unobserve(entry.target);
+            }
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+});

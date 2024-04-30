@@ -6,27 +6,27 @@
             <link rel="stylesheet" href="style.css">
             <title>alexquinn.design</title>
         </head>
-        <body>
+        <body class="alternate-background">
             <!-- Navigation-->
-            <nav>
+            <nav class="alternate-background">
                 <div class="nav-logo">
-                    <a href="https://alexquinn.design/"><img src="assets/personal-logo.png" alt="lowercase a and a capital Q combined to form a shape resembling an infinity symbol."></a>
+                    <a href="https://alexquinn.design/"><img src="assets/personal_logo_yellow.png" alt="lowercase a and a capital Q combined to form a shape resembling an infinity symbol."></a>
                 </div>
-                <ul class="nav-menu">
+                <ul class="nav-menu alternate-background">
                     <li class="nav-item">
-                        <a href="https://alexquinn.design/#projects" class="nav-link">PROJECTS</a>
+                        <a href="https://alexquinn.design/#projects" class="nav-link yellow-text">PROJECTS</a>
                     </li>
                     <li class="nav-item">
-                        <a href="photography" class="nav-link">PHOTOGRAPHY</a>  
+                        <a href="photography" class="nav-link yellow-text">PHOTOGRAPHY</a>  
                     </li>
                     <li class="nav-item">
-                        <a href="resume" class="nav-link">RESUME</a>  
+                        <a href="resume" class="nav-link yellow-text">RESUME</a>  
                     </li>
                     <li class="nav-item">
-                        <a href="friends" class="nav-link">FRIENDS OF MINE</a>  
+                        <a href="friends" class="nav-link yellow-text">FRIENDS OF MINE</a>  
                     </li>
                     <li class="nav-item">
-                        <a href="https://alexquinn.design/#contact" class="nav-link">CONTACT</a>    
+                        <a href="https://alexquinn.design/#contact" class="nav-link yellow-text">CONTACT</a>    
                     </li>
                 </ul>
                 <div class="hamburger">
@@ -37,7 +37,69 @@
             </nav>
             <!-- Main Content -->
             <main>
-                <section class="home-hero"></section>
+                <section class="photo-hero">
+                    <h1>FILM PHOTOGRAPHY</h1>
+                    <p>I've been an amateur photographer for almost 6 years now, but recently entered
+                        the film scene May of 2023. I love the unique personality of each film roll, 
+                        the mechanical movement and click of each photo, and the raw emotion that can 
+                        be hard to replicate in digital.
+                    </p>
+                    <h2>2023 - present</h2>
+                </section>
+
+                <section class="gallery">
+                    <div class="photo-column">
+                        <img src="Assets/Photography/american_tourism.jpg" alt="test">
+                        <img src="Assets/Photography/breached.jpg" alt="test" class="fade-in">
+                        <img src="Assets/Photography/eclipse_family.jpg" alt="test" class="fade-in">
+                        <img src="Assets/Photography/good_morning_garage.jpg" alt="test" class="fade-in">
+                        <img src="Assets/Photography/hanging_garden.jpg" alt="test" class="fade-in">
+                        <img src="Assets/Photography/lakeside_sunlight.jpg" alt="test" class="fade-in">
+                        <img src="Assets/Photography/ocean_man.jpg" alt="test" class="fade-in">
+                        <img src="Assets/Photography/pierce_the_sky.jpg" alt="test" class="fade-in">
+                    </div>
+
+                    <div class="photo-column">
+                        <img src="Assets/Photography/bashful.jpg" alt="test" >
+                        <img src="Assets/Photography/california_suburbs.jpg" alt="test" class="fade-in">
+                        <img src="Assets/Photography/evening_stroll.jpg" alt="test" class="fade-in">
+                        <img src="Assets/Photography/good_omens.jpg" alt="test" class="fade-in">
+                        <img src="Assets/Photography/heritage.jpg" alt="test" class="fade-in">
+                        <img src="Assets/Photography/largest_giant_wheel.jpg" alt="test" class="fade-in">
+                        <img src="Assets/Photography/paper_crane.jpg" alt="test" class="fade-in">
+                        <img src="Assets/Photography/quarter_life_crisis.jpg" alt="test" class="fade-in">
+                    </div>
+
+                    <div class="photo-column">
+                        <img src="Assets/Photography/bekah_tori_eclipse.jpg" alt="test" class=>
+                        <img src="Assets/Photography/caught_by_surprise.jpg" alt="test" class="fade-in">
+                        <img src="Assets/Photography/haley_profile.jpg" alt="test" class="fade-in">
+                        <img src="Assets/Photography/inari_taisha.jpg" alt="test" class="fade-in">
+                        <img src="Assets/Photography/izumo.jpg" alt="test" class="fade-in">
+                        <img src="Assets/Photography/morning_market.jpg" alt="test" class="fade-in">
+                        <img src="Assets/Photography/patiently_waiting.jpg" alt="test" class="fade-in">
+                        <img src="Assets/Photography/soundbar_01.jpg" alt="test" class="fade-in">
+                    </div>
+
+                </section>
+                <section class="contact alternate-background" id="contact">
+                    <div class="contact-container">
+                        <h2 class="contact-header yellow-text">Let's Get in Touch!</h2>
+                        <div class="form-container">
+                            <form action="https://formspree.io/f/xleqwavz" method="POST">
+                                <label for="email" class="yellow-text">Email: </label>
+                                <input type="text" class="alternate-label" id="email" name="email" placeholder="Enter your email address" />
+
+                                <label for="message" class="yellow-text">Message:</label>
+                                <textarea class="alternate-label" id="message" name="message" placeholder="Briefly describe your message"></textarea>
+
+                                <button class="btn-yellow" type="submit">Send</button>
+                                <hr class="hr-blue-hidden">
+                            </form>
+                        </div>
+                    </div>
+                </section>
             </main>
+            <script src="script.js"></script>
         </body>
     </html>
