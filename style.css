@@ -619,7 +619,6 @@ label{
 
 
 
-
 /*Media queries*/
 
 @media only screen and (min-width: 1024px){
@@ -634,7 +633,7 @@ label{
         left: 0;
         transform-origin: right;
         transform: scaleX(0);
-        transition: transform .3s ease-in-out;
+        transition: transform 500ms ease-in-out;
     }
     .nav-menu li a:hover::after{
         transform-origin: left;
