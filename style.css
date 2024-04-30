@@ -901,6 +901,21 @@ label{
         width: 9rem;
         font-size: .65rem;
     }
+    .photo-hero{
+        height: 35vh;
+        margin-top: .5rem;
+    }
+    .photo-hero h1{
+        font-size: 4.8rem;
+    }
+    .photo-hero h2{
+        font-size: 3rem;
+        margin-top: 3rem;
+        text-align: center;
+    }
+    .gallery{
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 480px)  {
@@ -980,17 +995,6 @@ label{
     .photo-hero h2{
         font-size: 2rem;
         margin-top: 3rem;
-        text-align: center;
-    }
-    .gallery{
-        display: block;
-        width: 90%;
-        margin: 0 auto 10% auto;
-    }
-    .gallery .photo-column {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
     }
 }
 
