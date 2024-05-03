@@ -927,14 +927,15 @@ label{
     }
     .hero-subhead h1{
         font-size: 2.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
      }
      .hero-subhead h1 span{
         font-size: 2rem;
      }
      .hero-title-crawl{
         font-size: 1.75rem;
-        margin-bottom: 2rem;
+        padding:2rem 0rem 0rem 0rem;
+        margin-top: 0rem;
      }
      .project{
         width: 95%;
