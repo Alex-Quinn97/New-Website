@@ -626,8 +626,11 @@ label{
     margin-top: 3rem;
 }
 
-
-
+/*Project Page*/
+.project-hero-image{
+    width: 900px;
+    height: 385px;
+}
 
 
 
