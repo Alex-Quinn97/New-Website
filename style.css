@@ -620,22 +620,72 @@ label{
 }
 .page-header{
     font-family: "Ade Display";
-    font-size: 8rem;
+    font-size: 7rem;
 }
 .resume-btn-container{
     margin-top: 3rem;
 }
 
 /*Project Page*/
-.project-hero-image{
-    width: 900px;
-    height: 385px;
+.project-img-container{
+    width: 100%;
+    height: auto;
+    margin: 1.25rem 0rem;
+    overflow: hidden;
+}
+.project-img-hero{
+    float: right;
+    width: 900px; /*change to 100% once img is correct*/
+    height: 385px; /*change to 100% once img is correct*/
+}
+.project-container{
+    width: 95%;
+    margin: auto;
+}
+.project-header{
+    clear:right;
+}
+.project-tag{
+    height: auto;
+    overflow: hidden;
+    margin: auto 0rem;
+}
+.project-tag div{
+    background-color: none;
+    border: 1px solid #0165FC;
+    border-radius: 2rem;
+    float: left;
+    font-family: "ZTBOskon90s";
+    font-size: 1.5rem;
+    margin: 0rem 1rem 0rem 0rem;
+    padding: 0.15rem 1rem 0.1rem 1rem;
+}
+.project-date{
+    font-size: 2.5rem;
+    font-family: 'ZTBOskon90s Light Italic';
+    font-weight: lighter;
+    text-align: center;
+}
+.project-details{
+    display: grid;
+    grid-template-columns: 3fr 1fr;  
+}
+.project-details p{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-size: 1.25rem;
 }
 
 
 
 
 
+/*delete later*/
+.center-button{
+    width: 20%;
+    margin: auto;
+    margin-bottom: 5rem;
+}
 
 /*Media queries*/
 
