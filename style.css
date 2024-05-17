@@ -98,6 +98,9 @@ li{
     background-color: #DFFF00 !important;
     color: #000814 !important;
 }
+.download-btn{
+    padding: 8px 40px;
+}
 .alternate-label{
     background-color: #F0EDE4;
     color: #000814;
@@ -608,8 +611,20 @@ label{
     opacity: 1;
     transform:  translateY(0);
 }
-
-
+/* Remove the friends-hero class once this one is done*/
+.standard-hero{
+    width: 65%;
+    margin-left: 2.5%;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+.page-header{
+    font-family: "Ade Display";
+    font-size: 8rem;
+}
+.resume-btn-container{
+    margin-top: 3rem;
+}
 
 
 
