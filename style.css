@@ -830,6 +830,7 @@ label{
     }
     .hero-title-crawl{
         padding:2rem 15rem 0rem 0rem;
+        margin-top: .75rem;
     }
     .project img{
         width: 7.5rem;
