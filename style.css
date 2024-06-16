@@ -42,6 +42,10 @@ li{
 .bold{
     font-weight: 700;
 }
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
 .white-text{
     color: #F0EDE4;
 }
@@ -64,6 +68,17 @@ li{
 }
 .mb-1{
     margin-bottom: 1rem;
+}
+.mb-3{
+    margin-bottom: 3rem;
+}
+.my-3{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .ml-2{
     margin-left:2rem;
@@ -105,7 +120,12 @@ li{
     background-color: #F0EDE4;
     color: #000814;
 }
-
+.section-header{
+    font-family: "Ade Display";
+    font-size: 3rem;
+    display: block;
+    width: fit-content;
+}
 
 /* Navigation */
 nav{
@@ -674,6 +694,55 @@ label{
     margin-bottom: 3rem;
     font-size: 1.25rem;
 }
+
+/* Grad Portal */
+#blue-bars{
+    width: auto;
+    height: 36rem;
+    margin-bottom: 10rem;
+    position: absolute;
+    top: 100;
+    left: 0;
+}
+#portal-mockup{
+    width: auto;
+    height: 36rem;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+#portal-mockup-img{
+    width: 100%;
+    height: auto;
+}
+.portal-mockup{
+    position: relative;
+    height: 42rem;
+
+}
+.portal-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.portal-lofi p{
+    padding-right: 8rem;;
+}
+.portal-hifi{
+    padding-left: 4rem;
+}
+
+
+
+
+
+
+
+
 
 
 

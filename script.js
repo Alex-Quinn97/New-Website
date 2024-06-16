@@ -145,3 +145,35 @@ document.addEventListener("DOMContentLoaded", function() {
         appearOnScroll.observe(fader);
     });
 });
+
+//Resize the height of a div to automatically adjust to content, even if positioned: absolute
+window.onload = function() {
+    adjustContainerHeight();
+};
+
+window.onresize = function() {
+    adjustContainerHeight();
+};
+
+function adjustContainerHeight() {
+    const container = document.getElementById('imageContainer');
+    const images = container.getElementsByClassName('image');
+
+    let maxHeight = 0;
+
+    for (let img of images) {
+        img.style.height = 'auto'; // Reset to natural height
+        img.style.width = '100%'; // Ensure images fit the container width
+        const imgHeight = img.offsetHeight;
+
+        // Calculate the maximum bottom position
+        const topPosition = img.offsetTop;
+        const bottomPosition = topPosition + imgHeight;
+
+        if (bottomPosition > maxHeight) {
+            maxHeight = bottomPosition;
+        }
+    }
+
+    container.style.height = `${maxHeight}px`;
+}
