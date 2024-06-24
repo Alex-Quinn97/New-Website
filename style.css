@@ -23,17 +23,14 @@ h2{
     font-size: 1.875rem;
     font-weight: lighter;
 }
+h3{
+    font-family: "ZTBOskon90s Light Italic";
+    font-size: 2rem;
+    font-weight: 100;
+}
 li{
     list-style-type: none;
 }
-
-
-
-
-
-
-
-
 
 /* Utility */
 .no-italics{
@@ -45,6 +42,29 @@ li{
 .center{
     margin-left: auto;
     margin-right: auto;
+}
+.center-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-image{
+    display: block;
+    margin: auto;
+}
+.float{
+    float: left;
+}
+.float img{
+    width: auto;
+    height: 18.75rem;
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+.full-width{
+    width: 100% !important;
 }
 .white-text{
     color: #F0EDE4;
@@ -66,11 +86,26 @@ li{
     color: #0165FC;
     height: 1px;
 }
+.project-section-header{
+    font-family: "Ade Display";
+    font-size: 3.5rem;
+}
+.blockquote{
+    font-size: 1.33rem;
+    text-align: center;
+    padding: 0rem 5rem 0rem 5rem;
+}
+
+/* Margin */
 .mb-1{
     margin-bottom: 1rem;
 }
 .mb-3{
     margin-bottom: 3rem;
+}
+.my-2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .my-3{
     margin-top: 3rem;
@@ -89,15 +124,25 @@ li{
 .mr-3{
     margin-right:3rem;
 }
+.mt-1{
+    margin-top:1rem;
+}
 .mt-2{
     margin-top:2rem;
 }
 .mt-3{
     margin-top:3rem;
 }
+
+/* Padding */
 .pt-5{
     padding-top: 3rem;
 }
+.pr-8{
+    padding-right: 8rem;
+}
+
+/* Buttons */
 .btn-blue{
     color: #F0EDE4;
     background-color: #0165FC;
@@ -116,6 +161,8 @@ li{
 .download-btn{
     padding: 8px 40px;
 }
+
+
 .alternate-label{
     background-color: #F0EDE4;
     color: #000814;
@@ -126,6 +173,68 @@ li{
     display: block;
     width: fit-content;
 }
+
+/* Grid Structures */
+.one-col-grid{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.one-col-grid-m{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.two-col-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.four-col-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.ade-font{
+    font-family: "Ade Display";
+}
+.fs-2{
+    font-size: 2rem;
+}
+.fs-4{
+    font-size: 4rem;
+}
+
+.basic-img{
+    width: 100%;
+    height: auto;
+}
+.white-text{
+    color: #F0EDE4;
+}
+.caption{
+    font-family: 'ZTBOskon90s Light Italic';
+    font-size: 1.25rem;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.span-2{
+    grid-column: span 2;
+}
+.blue-border{
+    border: #0165FC 1px solid;
+}
+
 
 /* Navigation */
 nav{
@@ -159,7 +268,6 @@ nav{
     position: relative;
     text-decoration: none;
 }
-
 .hamburger{
     display: none;
 }
@@ -175,6 +283,9 @@ nav{
 .yellow-menu{
     background: #DFFF00;
 }
+
+
+
 /* Home Page */
 .name-hero-container{
     display: block;
@@ -658,11 +769,13 @@ label{
     height: 385px; /*change to 100% once img is correct*/
 }
 .project-container{
-    width: 95%;
+    width: 90%;
     margin: auto;
+    padding-top: 15rem; 
 }
 .project-header{
     clear:right;
+    margin-bottom: 1rem;
 }
 .project-tag{
     height: auto;
@@ -679,7 +792,18 @@ label{
     margin: 0rem 1rem 0rem 0rem;
     padding: 0.15rem 1rem 0.1rem 1rem;
 }
+.project-tag-white div{
+    background-color: none;
+    border: 1px solid #F0EDE4;
+    border-radius: 2rem;
+    float: left;
+    font-family: "ZTBOskon90s";
+    font-size: 1.5rem;
+    margin: 0rem 1rem 0rem 0rem;
+    padding: 0.15rem 1rem 0.1rem 1rem;
+}
 .project-date{
+    color: #F0EDE4;
     font-size: 2.5rem;
     font-family: 'ZTBOskon90s Light Italic';
     font-weight: lighter;
@@ -693,6 +817,7 @@ label{
     margin-top: 1rem;
     margin-bottom: 3rem;
     font-size: 1.25rem;
+    width: 90%;
 }
 
 /* Grad Portal */
@@ -712,22 +837,10 @@ label{
     left: 50%;
     transform: translate(-50%);
 }
-#portal-mockup-img{
-    width: 100%;
-    height: auto;
-}
 .portal-mockup{
     position: relative;
     height: 42rem;
 
-}
-.portal-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
 }
 .portal-lofi p{
     padding-right: 8rem;;
@@ -737,9 +850,47 @@ label{
 }
 
 
+/* The SoundBar */
+.feature-soundbar{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 100%) 30%, rgba(255, 255, 255, 0%) 100%), url(Assets/Photography/the-soundbar-record.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: max-content;
+}
+.soundbar-process-grid{
+    width: 80%;
+    margin: auto;
+}
+.soundbar-brand-identity{
+    transition: 500ms;
+}
+.soundbar-brand-identity:hover{
+    border: #0165FC 1px solid;
+    background: #0165FC;
+    color:#F0EDE4;
+    transition: 500ms;
+}
+.soundbar-brand-identity:hover p{
+    color:#F0EDE4;
+}
+.soundbar-process-txt p{
+    padding: 1rem;
+}
+#soundbar-question{
+    font-family: "ZTBOskon90s Light Italic";
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
 
-
-
+/* New Grad Portal */
+.feature-portal{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 100%) 30%, rgba(255, 255, 255, 0%) 100%), url(Assets/Photography/morning_market.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: max-content;
+}
 
 
 
