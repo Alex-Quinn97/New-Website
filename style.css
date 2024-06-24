@@ -39,9 +39,17 @@ li{
 .bold{
     font-weight: 700;
 }
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .center{
     margin-left: auto;
     margin-right: auto;
+}
+.center-text{
+    text-align: center;
 }
 .center-content{
     display: flex;
@@ -100,6 +108,9 @@ li{
 .mb-1{
     margin-bottom: 1rem;
 }
+.mb-2{
+    margin-bottom: 2rem;
+}
 .mb-3{
     margin-bottom: 3rem;
 }
@@ -110,6 +121,10 @@ li{
 .my-3{
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+.my-5{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 .my-auto{
     margin-top: auto;
@@ -133,13 +148,22 @@ li{
 .mt-3{
     margin-top:3rem;
 }
-
+.mt-10{
+    margin-top: 10rem;
+}
 /* Padding */
 .pt-5{
     padding-top: 3rem;
 }
+.pr-5{
+    padding-right: 5rem;
+}
 .pr-8{
     padding-right: 8rem;
+}
+.px-10{
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 /* Buttons */
@@ -176,12 +200,12 @@ li{
 
 /* Grid Structures */
 .one-col-grid{
-    width: 90%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
-.one-col-grid-m{
-    width: 80%;
+.one-col-grid-wide{
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -193,11 +217,19 @@ li{
     margin-left: auto;
     margin-right: auto;
 }
+.three-col-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;  
+}
 .four-col-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    width: 100%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -882,6 +914,23 @@ label{
     font-size: 2rem;
     margin-bottom: .5rem;
 }
+.soundbar-logos{
+    display: flex;
+    justify-content: space-between;
+}
+.soundbar-logos img{
+    width: auto;
+    height: 7rem;
+}   
+.soundbar-new-assets{
+    display: flex;
+    justify-content: space-between;
+}
+.soundbar-new-assets img{
+    width: auto;
+    height: 17rem;
+} 
+
 
 /* New Grad Portal */
 .feature-portal{
