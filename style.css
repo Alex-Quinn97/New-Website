@@ -186,7 +186,6 @@ li{
     padding: 8px 40px;
 }
 
-
 .alternate-label{
     background-color: #F0EDE4;
     color: #000814;
@@ -930,7 +929,12 @@ label{
     width: auto;
     height: 17rem;
 } 
-
+.soundbar-colors{
+    display: block;
+    width: 40%;
+    height: auto;
+    margin: 0 auto 4rem auto;
+}
 
 /* New Grad Portal */
 .feature-portal{
