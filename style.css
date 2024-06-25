@@ -31,16 +31,18 @@ h3{
 li{
     list-style-type: none;
 }
+
 footer{
     background-color: #0165FC;
     height: 15rem;
 }
-footer div h2,p{
+footer div>div>p{
     color: #F0EDE4;
     font-size: 1.5rem;
 }
 .footer-contact{
     font-size: 4rem;
+    color: #F0EDE4;
     font-family: 'Ade Display';
 }
 
