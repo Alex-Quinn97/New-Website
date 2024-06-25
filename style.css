@@ -31,6 +31,18 @@ h3{
 li{
     list-style-type: none;
 }
+footer{
+    background-color: #0165FC;
+    height: 15rem;
+}
+footer div h2,p{
+    color: #F0EDE4;
+    font-size: 1.5rem;
+}
+.footer-contact{
+    font-size: 4rem;
+    font-family: 'Ade Display';
+}
 
 /* Utility */
 .no-italics{
@@ -44,6 +56,11 @@ li{
     display: table;
     clear: both;
 }
+.border-radius{
+    border-radius: 1rem;
+}
+
+/* Center */
 .center{
     margin-left: auto;
     margin-right: auto;
@@ -60,6 +77,11 @@ li{
     display: block;
     margin: auto;
 }
+
+
+
+
+
 .float{
     float: left;
 }
@@ -126,6 +148,10 @@ li{
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
+.my-10{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
 .my-auto{
     margin-top: auto;
     margin-bottom: auto;
@@ -155,6 +181,9 @@ li{
 .pt-5{
     padding-top: 3rem;
 }
+.pr-3{
+    padding-right: 3rem;
+}
 .pr-5{
     padding-right: 5rem;
 }
@@ -178,6 +207,17 @@ li{
     cursor: pointer;
     border-radius: 30px;
 }
+.btn-white{
+    color: #0165FC;
+    background-color: #F0EDE4;
+    border: none;
+    font-family: "Inter-Bold";
+    height: auto;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30px;
+}
 .btn-yellow{
     background-color: #DFFF00 !important;
     color: #000814 !important;
@@ -185,6 +225,8 @@ li{
 .download-btn{
     padding: 8px 40px;
 }
+
+
 
 .alternate-label{
     background-color: #F0EDE4;
@@ -211,6 +253,14 @@ li{
 .two-col-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.two-col-40-60{
+    display: grid;
+    grid-template-columns: 40% 60%;
     grid-template-rows: auto;
     width: 80%;
     margin-left: auto;
@@ -247,6 +297,7 @@ li{
 .basic-img{
     width: 100%;
     height: auto;
+    border-radius: 1rem;
 }
 .white-text{
     color: #F0EDE4;
@@ -258,6 +309,11 @@ li{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+.caption-left{
+    font-family: 'ZTBOskon90s Light Italic';
+    font-size: 1.25rem;
+    font-weight: 100;
 }
 .span-2{
     grid-column: span 2;
@@ -928,12 +984,21 @@ label{
 .soundbar-new-assets img{
     width: auto;
     height: 17rem;
+    border-radius: 1rem;
 } 
 .soundbar-colors{
     display: block;
     width: 40%;
     height: auto;
     margin: 0 auto 4rem auto;
+}
+.soundbar-posters{
+    width: 100%;
+}
+.soundbar-posters img{
+    width: auto;
+    height: 25rem;
+    border-radius: 1rem;
 }
 
 /* New Grad Portal */
