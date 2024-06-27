@@ -34,16 +34,15 @@ li{
 
 footer{
     background-color: #0165FC;
-    height: 15rem;
 }
 footer div>div>p{
     color: #F0EDE4;
-    font-size: 1.5rem;
+    font-size: 1.rem;
 }
 .footer-contact{
-    font-size: 4rem;
+    font-size: 3rem;
     color: #F0EDE4;
-    font-family: 'Ade Display';
+    font-family: 'ZTBOskon90s Light Italic';
 }
 
 /* Utility */
@@ -154,6 +153,9 @@ footer div>div>p{
     margin-top: 10rem;
     margin-bottom: 10rem;
 }
+.mx-auto{
+    margin-left:
+}
 .my-auto{
     margin-top: auto;
     margin-bottom: auto;
@@ -175,6 +177,9 @@ footer div>div>p{
 }
 .mt-3{
     margin-top:3rem;
+}
+.mt-5{
+    margin-top: 5rem;
 }
 .mt-10{
     margin-top: 10rem;
@@ -332,7 +337,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 1.25rem 2rem 1.25rem 2rem;
     background-color: #F0EDE4;
     border-bottom: #0165fc 2px solid;
     z-index:100;
@@ -341,7 +346,7 @@ nav{
     display: block;
 }
 .nav-logo img{
-    width: 6rem;
+    width: 4rem;
     height: auto;
 
 }
@@ -352,7 +357,7 @@ nav{
 }
 .nav-menu li a{
     font-family: "Ade Display";
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 0rem 1.5rem;
     position: relative;
     text-decoration: none;
@@ -910,6 +915,14 @@ label{
 }
 
 /* Grad Portal */
+.feature-portal{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 100%) 30%, rgba(255, 255, 255, 0%) 100%), url(Assets/New-Grad-Portal/grad-portal-feature.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: max-content;
+}
 #blue-bars{
     width: auto;
     height: 36rem;
@@ -918,7 +931,7 @@ label{
     top: 100;
     left: 0;
 }
-#portal-mockup{
+#portal-video{
     width: auto;
     height: 36rem;
     z-index: 1;
@@ -926,18 +939,21 @@ label{
     left: 50%;
     transform: translate(-50%);
 }
-.portal-mockup{
+.portal-video-container{
     position: relative;
     height: 42rem;
 
 }
-.portal-lofi p{
+.portal-mockups p{
     padding-right: 8rem;;
 }
-.portal-hifi{
-    padding-left: 4rem;
+.portal-mockup-container{
+    width: 80%;
 }
-
+.portal-mockup-container img{
+    width: 97.5%;
+    height: auto;
+}
 
 /* The SoundBar */
 .feature-soundbar{
@@ -1003,18 +1019,19 @@ label{
     border-radius: 1rem;
 }
 
-/* New Grad Portal */
-.feature-portal{
-    background:linear-gradient(0deg, rgba(0, 0, 0, 100%) 30%, rgba(255, 255, 255, 0%) 100%), url(Assets/Photography/morning_market.jpg);
+/* Grad College Website Redesign */
+.feature-grad{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 100%) 30%, rgba(255, 255, 255, 0%) 100%), url(Assets/Grad-College-Website/grad\ college\ website\ feature.jpg);
+    background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: max-content;
 }
-
-
-
-
+#celebration-skyline{
+    width: auto;
+    height: 32rem;
+}
 
 
 
