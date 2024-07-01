@@ -41,6 +41,9 @@ li{
 hr{
     color: #0165FC;
 }
+a:visited{
+    color: #0165FC;
+}
 footer{
     background-color: #0165FC;
 }
