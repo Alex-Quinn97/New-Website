@@ -5,22 +5,27 @@
     padding: 0;
 }
 body{
+    color: #0165FC;
     background-color: #F0EDE4;
 }
 h1{
+    color: #0165FC;
     font-family: "ZTBOskon90s Light Italic";
     font-size: 4rem;
     font-weight: lighter;
 }
 h1 span{
+    color: #0165FC;
     font-size: 4rem;
 }
 h2{
+    color: #0165FC;
     font-family: "ZTBOskon90s";
     font-size: 1.875rem;
     font-weight: lighter;
 }
 h3{
+    color: #0165FC;
     font-family: "ZTBOskon90s Light Italic";
     font-size: 2rem;
     font-weight: 100;
@@ -426,6 +431,7 @@ nav{
 }
 .hero-subhead{
     margin-left: 3rem;
+    color: #0165FC;
 }
 
 /* Project Marquee */
