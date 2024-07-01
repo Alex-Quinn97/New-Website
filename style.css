@@ -1,9 +1,6 @@
 /* Universal */
 * {
     box-sizing: border-box;
-    color: #0165fc;
-    font-family: Inter-Light;
-    font-size: 16px;
     margin: 0;
     padding: 0;
 }
@@ -28,10 +25,17 @@ h3{
     font-size: 2rem;
     font-weight: 100;
 }
+p{
+    color: #0165fc;
+    font-family: Inter-Light;
+    font-size: 16px;
+}
 li{
     list-style-type: none;
 }
-
+hr{
+    color: #0165FC;
+}
 footer{
     background-color: #0165FC;
 }
@@ -59,6 +63,9 @@ footer div>div>p{
 }
 .border-radius{
     border-radius: 1rem;
+}
+.blue-background{
+    background: #0165FC;
 }
 
 /* Center */
@@ -99,6 +106,9 @@ footer div>div>p{
 }
 .white-text{
     color: #F0EDE4;
+}
+.highlight-blue{
+    color: #0165FC;
 }
 .hr-white{
     border: 1px solid #F0EDE4; 
@@ -184,6 +194,7 @@ footer div>div>p{
 .mt-10{
     margin-top: 10rem;
 }
+
 /* Padding */
 .pt-5{
     padding-top: 3rem;
@@ -232,8 +243,6 @@ footer div>div>p{
 .download-btn{
     padding: 8px 40px;
 }
-
-
 
 .alternate-label{
     background-color: #F0EDE4;
@@ -290,7 +299,6 @@ footer div>div>p{
     margin-right: auto;
 }
 
-
 .ade-font{
     font-family: "Ade Display";
 }
@@ -306,6 +314,12 @@ footer div>div>p{
     height: auto;
     border-radius: 1rem;
 }
+.basic-img-square{
+    width: 100%;
+    height: auto;
+}
+
+/* Text */
 .white-text{
     color: #F0EDE4;
 }
@@ -322,6 +336,25 @@ footer div>div>p{
     font-size: 1.25rem;
     font-weight: 100;
 }
+.text-over-img{
+    color: #0165FC;
+    font-family: 'Ade';
+    font-size: 5rem;
+    background-color: #F0EDE4;
+    position: absolute;
+    margin: auto;
+    padding: 2rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+
+/* Divs */
+.relative{
+    position: relative;
+}
+
 .span-2{
     grid-column: span 2;
 }
@@ -1033,8 +1066,49 @@ label{
     height: 32rem;
 }
 
-
-
+/* OU Marketing and Promo Materials */
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: .75rem;
+    border: #0165FC 1px solid;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 2rem;
+    font-family: 'Ade';
+    font-size: 4rem;
+    color: #0165fc;
+    cursor: pointer;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .accordion-content{
+    display: grid; 
+    grid-template-rows: 0fr;
+    margin: auto;
+    transition: 500ms grid-template-rows ease;
+    width: 100%;
+}
+.accordion-content > div {
+    overflow: hidden;
+}
+.accordion input[type="radio"]:checked + label + .accordion-content{
+    grid-template-rows: 1fr;
+}
+.gradcon-callout-large{
+    font-family: 'Ade';
+    width: 100%;
+    font-size: 4.25rem;
+    text-align: justify;
+    color: #CECBC3;
+    line-height: 1.2;
+}
+.gradcon-callout-large > .highlight{
+    color: #0165FC;
+}
 
 /*delete later*/
 .center-button{
