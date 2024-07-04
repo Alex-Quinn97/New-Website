@@ -39,7 +39,7 @@ li{
     list-style-type: none;
 }
 hr{
-    color: #0165FC;
+    border: #0165FC 1px solid;
 }
 a:visited{
     color: #0165FC;
