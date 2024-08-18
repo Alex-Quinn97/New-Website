@@ -96,6 +96,12 @@ footer div>div>p{
 .no-italics{
     font-style: normal;
 }
+.body-medium{
+    font-family: 'DM Sans Medium';
+}
+.body-extralight{
+    font-family: 'DM Sans Extra Light Italic';
+}
 .bold{
     font-weight: 700;
 }
@@ -113,8 +119,14 @@ footer div>div>p{
 .width-60{
     width: 60%;
 }
+.width-65{
+    width: 65%;
+}
 .width-75{
     width: 75%;
+}
+.width-90{
+    width: 90%;
 }
 .divider-sm{
     width: 20%;
@@ -142,6 +154,25 @@ footer div>div>p{
 }
 #blue-arrow-left:hover{
     transform: translateX(-20px);
+}
+.container-blue-rounded{
+    background-color: #0165FC;
+    width: 97.5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25%;
+    border-radius: 1rem;
+    height: fit-content;
+}
+.container-blue-rounded-outline{
+    background-color: #F0EDE4;
+    width: 97.5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25%;
+    border-radius: 1rem;
+    border: 2px solid #0165fc;
+    height: fit-content;
 }
 
 /* General Positioning */
@@ -195,6 +226,9 @@ footer div>div>p{
 .highlight-blue{
     color: #0165FC;
 }
+.hr-blue-thick{
+    border: 3px solid #0165fc; 
+}
 .hr-white{
     border: 1px solid #F0EDE4; 
 }
@@ -234,9 +268,29 @@ footer div>div>p{
 .note{
    font-family: 'DM Sans Extra Light Italic';
 }
+.medium-text{
+    font-family: 'ZTBOskon90s Extra Light';
+    font-size: 2rem;
+    font-weight: 100;
+}
+.medium-large-text{
+    font-family: 'ZTBOskon90s Extra Light';
+    font-size: 3.5rem;
+    font-weight: 100;
+}
 .big-text{
     font-family: 'ZTBOskon90s Extra Light';
     font-size: 5rem;
+    font-weight: 100;
+}
+.big-text-italic{
+    font-family: 'ZTBOskon90s Medium Expanded Italic';
+    font-size: 4rem;
+    font-weight: 100;
+}
+.big-number{
+    font-family: 'ZTBOskon90s Medium Expanded Italic';
+    font-size: 4rem;
     font-weight: 100;
 }
 
@@ -314,15 +368,27 @@ footer div>div>p{
 .mt-10{
     margin-top: 10rem;
 }
+.mt-20{
+    margin-top: 20rem;
+}
 
 /* Padding */
 .pb-1{
     padding-top: 1rem;
 }
+.pb-5{
+    padding-bottom: 5rem;
+}
 .pl-1{
     padding-left: 1rem;
 }
+.pl-2{
+    padding-left: 2rem;
+}
 .pr-1{
+    padding-right: 1rem;
+}
+.pr-2{
     padding-right: 1rem;
 }
 .pt-3{
@@ -340,9 +406,21 @@ footer div>div>p{
 .pr-8{
     padding-right: 8rem;
 }
+.px-2{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.px-3{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
 .px-10{
     padding-left: 10rem;
     padding-right: 10rem;
+}
+.py-3{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 /* Buttons */
@@ -403,7 +481,6 @@ footer div>div>p{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -419,6 +496,14 @@ footer div>div>p{
     grid-template-rows: auto;
     width: 80%;
     grid-gap: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.two-col-20-80-wide{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1225,6 +1310,14 @@ input[type="radio"]{
     margin-bottom: 5rem;
 }
 
+
+
+
+
+
+
+
+
 /*Media queries*/
 
 @media only screen and (min-width: 1024px){
@@ -1320,6 +1413,21 @@ input[type="radio"]{
         margin: 5px 0;
         width: 100%;
     }
+    footer > div > div{
+        margin: 2rem 0rem 2rem 5rem;
+    }
+
+    /* Service Design */
+    .sdb-pp > div.width-60{
+        padding: 0rem 3rem 0rem 3rem;
+    }
+    .sdb-oo{
+        padding: 3rem 0rem;
+        margin-top: 3rem;
+    }
+    .sdb-oo > div > p{
+        padding-right: 5rem;
+    }
 }
 
 @media only screen and (max-width: 1024px){
@@ -1398,6 +1506,28 @@ input[type="radio"]{
     }
     .friend-info h2{
         width: 100%;
+    }
+    .hide-in-mobile{
+        display: none;
+    }
+    .big-text-italic{
+        font-size: 3rem;
+        text-align: justify;
+    }
+    .mt-20{
+        margin-top: 10rem;
+    }
+    .width-65{
+        width: 90%;
+    }
+    /* Service Design */
+    .sdb-ppaop{
+        margin: 2rem auto 0rem auto;
+    }
+    .sdb-oo > div > div > div > p{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 3rem;
     }
 }
 
@@ -1526,6 +1656,9 @@ input[type="radio"]{
 }
 
 @media only screen and (max-width: 480px)  {
+    .px-2{
+        padding: 0rem 1rem;
+    }
     .name-hero-container img{
         margin: 2rem;
     }
@@ -1613,6 +1746,128 @@ input[type="radio"]{
     .gallery .photo-column {
         width: 100%;
     }
+    .two-col-grid{
+        grid-template-columns: 1fr;
+    }
+    .two-col-grid-wide{
+        grid-template-columns: 1fr;
+    }
+    .two-col-grid-gap{
+        grid-template-columns: 1fr;
+    }
+    .two-col-65-35{
+        grid-template-columns: 1fr;
+    }
+    .two-col-65-35 div{
+        max-width: 100%;
+    }
+    .big-text-italic{
+        font-size: 2rem;
+    }
+
+    /* Service Design */
+    .p-sdb-final-product{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .div-sdb-number-pairing{
+        margin-top: 0rem;
+    }
+    .div-sdb-number-pairing .big-number{
+        font-size: 3rem;
+        width: 2.25rem;
+    }
+    .div-sdb-number-pairing .medium-text{
+        margin: auto 0rem;
+        padding-left: 2rem;
+    }
+    .sdb-current-system >div.space-between{
+        display: block;
+    }
+    .sdb-current-system > div > div > .big-number{
+        font-size: 3rem;
+        width: 2.25rem;
+    }
+    .sdb-current-system > div > div > .medium-text{
+        padding-left: 2rem;
+    }
+    .sdb-ppaop{
+        margin-top: 5rem;
+    }
+    .sdb-ppaop >div.space-between{
+        display: block;
+    }
+    .sdb-ppaop > div > div > .big-number{
+        font-size: 3rem;
+        width: 2.25rem;
+    }
+    .sdb-ppaop > div > div > .big-text{
+        padding-left: 4rem;
+        font-size: 3rem;
+        margin: auto 0rem auto 0rem;
+    }
+    .sdb-ppaop > div > div{
+        margin-bottom: 1rem;
+    }
+    .section-header{
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 0rem;
+    }
+    .sdb-pp > div.width-60{
+        width: 90%;
+    }
+    .sdb-oo{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .sdb-oo > div > p{
+        margin-bottom: 2rem;
+    }
+    .sdb-oo > div > div > div > p{
+        display: block;
+        padding-right: 0rem;
+    }
+    .sdb-oo > div > div > .col-right{
+        padding-left: 1rem;
+    }
+
+    /* Features */
+    .project-container{
+        padding-top: 5rem; 
+    }
+    .project-header{
+        font-size: 4rem;
+    }
+    .project-details{
+        grid-template-columns: 1fr;
+    }
+    .project-details p{
+        font-size: 1rem;
+    }
+    .project-tag-white div{
+        font-size: 1.25rem;
+        margin: .5rem 1rem 0rem 0rem;
+    }
+    .project-date{
+        text-align: left;
+        font-size:2rem;
+        margin-top: 1rem;
+    }
+
+    /* footer */
+    footer > div > div{
+        margin: 3rem 0rem 0rem 0rem;
+        padding: 1rem;
+    }
+    footer > div > div > div.width-75{
+        width: 100%;
+    }
+    .footer-contact{
+        font-size: 4rem;
+    }
+
+
 }
 
 
@@ -1632,15 +1887,19 @@ input[type="radio"]{
 /* DM Sans */
 @font-face {
     font-family: 'DM Sans Light';
-    src: url(Fonts/DMSans_18pt-Light.ttf) format("truetype");
+    src: url(Fonts/DMSans-Light.ttf) format("truetype");
 }
 @font-face {
     font-family: 'DM Sans Extra Light Italic';
-    src: url(Fonts/DMSans_18pt-ExtraLightItalic.ttf) format("truetype");
+    src: url(Fonts/DMSans-ExtraLightItalic.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'DM Sans Medium';
+    src: url(Fonts/DMSans-Medium.ttf) format("truetype");
 }
 @font-face {
     font-family: 'DM Sans Bold';
-    src: url(Fonts/DMSans_18pt-Bold.ttf) format("truetype");
+    src: url(Fonts/DMSans-Bold.ttf) format("truetype");
 }
 
 /* ZTBros Oskon 90s */
@@ -1659,6 +1918,10 @@ input[type="radio"]{
 @font-face {
     font-family: 'ZTBOskon90s Light Italic';
     src: url(Fonts/ZTBrosOskon90s-LightItalic.otf) format("opentype");
+}
+@font-face {
+    font-family: 'ZTBOskon90s Medium Expanded Italic';
+    src: url(Fonts/ZTBrosOskon90s-MedExpIta.woff2) format("opentype");
 }
 @font-face {
     font-family: 'ZTBOskon90s Semi Bold Italic';
