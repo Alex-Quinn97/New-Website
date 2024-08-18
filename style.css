@@ -1351,9 +1351,9 @@ input[type="radio"]{
     .project.clickable-div:hover .hover-number {
         display: block;
     }
-        .side-project h3:hover{
-            transform: translateY(-10px);
-        }
+    .side-project h3:hover{
+        transform: translateY(-10px);
+    }
 
     .project.clickable-div:hover .original-number {
         display: none;
