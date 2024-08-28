@@ -1592,7 +1592,7 @@ input[type="radio"]{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 65vh;
+    height: 100vh;
     }
     .px-2{
         padding: 0rem 1rem;
