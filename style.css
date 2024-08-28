@@ -15,7 +15,7 @@ h1{
     font-weight: lighter;
 }
 h1 span{
-    color: #0165FC;
+    color: #F0EDE4;
     font-size: 4rem;
 }
 h2{
@@ -47,8 +47,26 @@ li{
 hr{
     border: #0165FC 1px solid;
 }
+a{
+    color: #0165FC;
+}
 a:visited{
     color: #0165FC;
+}
+.button{
+    background-color: #F0EDE4;
+    border: 1px solid #F0EDE4;
+    border-radius: 2rem; 
+    color: #0165FC;
+    font-family: "DM Sans";
+    font-size: .8rem;
+    margin: 0.5rem 0.5rem 10rem 0rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    text-decoration: none;
+    transition: 350ms ease-in-out;
+}
+.button:hover{
+    margin-left: 1rem;
 }
 div{
     height: auto;
@@ -60,6 +78,7 @@ footer{
     margin-right: auto;
     margin-bottom: 1.25%;
     border-radius: 1rem;
+    padding: 0;
     height: 25rem;
 }
 footer div>div>p{
@@ -71,19 +90,17 @@ footer div>div>p{
     color: #F0EDE4;
     font-family: 'Ade Display';
 }
-#contact-email{
-    font-family: 'DM Sans Bold';
-    font-size: 1.75rem;
+#footer-buttons div{
+    display:flex;
+    align-items:center;
 }
-#contact-phone{
-    font-family: 'DM Sans';
-    font-size: 1rem;
+#footer-buttons{
+    display:flex;
+    align-items:center;
 }
 #instagram{
    max-width: 3.25rem;
    padding-left: 1rem;
-   margin-top: auto;
-   margin-bottom: auto;
 }
 
 /* Utility */
@@ -222,6 +239,7 @@ footer div>div>p{
 }
 .white-text{
     color: #F0EDE4;
+    font-family: 'DM Sans';
 }
 .highlight-blue{
     color: #0165FC;
@@ -541,6 +559,14 @@ footer div>div>p{
     margin-left: auto;
     margin-right: auto;  
 }
+.three-col-grid-90{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;  
+}
 .four-col-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -550,16 +576,7 @@ footer div>div>p{
     margin-right: auto;
 }
 
-.ade-font{
-    font-family: "Ade Display";
-}
-.fs-2{
-    font-size: 2rem;
-}
-.fs-4{
-    font-size: 4rem;
-}
-
+/* Images */
 .basic-img{
     display: block;
     max-width: 100%;
@@ -572,6 +589,15 @@ footer div>div>p{
 }
 
 /* Text */
+.fs-2{
+    font-size: 2rem;
+}
+.fs-4{
+    font-size: 4rem;
+}
+.ade-font{
+    font-family: "Ade Display";
+}
 .white-text{
     color: #F0EDE4;
 }
@@ -606,14 +632,12 @@ footer div>div>p{
 .relative{
     position: relative;
 }
-
 .span-2{
     grid-column: span 2;
 }
 .blue-border{
     border: #0165FC 1px solid;
 }
-
 
 /* Navigation */
 nav{
@@ -663,9 +687,15 @@ nav{
     background: #DFFF00;
 }
 
-
-
 /* Home Page */
+.home-hero{
+    background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
+    url(Assets/feature.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 82.5vh;
+}
 .name-hero-container{
     display: block;
     height: auto;
@@ -678,7 +708,9 @@ nav{
 }
 .hero-subhead{
     margin-left: 3rem;
-    color: #0165FC;
+}
+.hero-subhead h2, h1{
+    color: #F0EDE4;
 }
 
 /* Project Marquee */
@@ -688,7 +720,7 @@ nav{
     height: 5rem;
     border-top: 1px solid #0165FC; /* Top border */
     border-bottom: 1px solid #0165FC; /* Bottom border */
-    margin: 5rem 0rem 2rem 0rem;
+    margin: 0rem 0rem 2rem 0rem;
 }
 #project-marquee {
     overflow: hidden;
@@ -759,72 +791,57 @@ nav{
     grid-column-start: 2;
     grid-column-end: 6;
 }
-/* Side Projects */
-.side-projects{
-    background:#0165FC;
-}
-.side-projects-header{
-    align-items: center;
-    color: #0165FC;
-    display:flex;
-    font-family: "Ade Display";
-    font-size: 17rem;
-    justify-content: center;
-    overflow-x: hidden;
-    text-shadow: 0 0 2px #F0EDE4, 0 0 2px #F0EDE4, 0 0 2px #F0EDE4, 0 0 1px #F0EDE4;
-}
-.side-projects-subheader{
-    align-items: center;
-    color: #F0EDE4;
-    display: flex;
-    font-family: "ZTBOskon90s Light Italic";
-    font-size: 2rem;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-.side-project-header-container {
-    background-size: cover; /* Ensure the background image covers the container */
-    transition: background-image 1s ease-in-out; /* Adding transition effect */
-}
-.side-projects-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: auto;
-    padding-bottom: 3rem;
-    width: 85%;
-}
-.side-project{
-    display: grid;
-    grid-template-rows: repeat(3, auto);
-    padding: 0rem 1.75rem 0rem 1.75rem;
-}
-.side-project-header-container{
-    background-image: none;
-}
-.side-project h3{
-    align-items: center;
-    display: flex;
-    margin: 1rem 0rem .5rem 0rem;
-    transition: transform 0.5s ease;
-}
-.side-project h3>a{
-    color: #F0EDE4;
-    font-family: "Ade Display";
-    font-size: 2.5rem;
-    text-decoration: none;
-}
 
-.side-project p{
+/* Design Treats */
+.design-treats-container{
+    background-color: #0165FC;
+    width: 97.5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25%;
+    border-radius: 1rem;
+    padding: 2rem;
+    height: fit-content;
+}
+.design-treats-lead{
+    font-family: 'ZTBOskon90s Light';
     color: #F0EDE4;
+    font-size: 2.25rem;
+    text-align: center;
+    margin-top: 7rem;
+}
+.dt-header-img{
+    width: 100%;
+    height: auto;
+}
+.design-treat{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.dt-header{
+    color: #F0EDE4;
+    font-family: 'Ade Display';
+    font-size: 2.75rem;
+}
+#dt-soundbar{
+    font-size: 2.5rem !important;
+}
+.dt-body{
+    color: #F0EDE4;
+    margin: 1rem 0rem 3rem 0rem;
 }
 .tag-container{
+    display: block;
+    overflow: auto;
     margin-top: 1rem;
 }
-.tag-container div{
-    background-color: #F0EDE4;
+.tag-container div p{
+    background-color: #0165FC;
     border: 1px solid #F0EDE4;
     border-radius: 2rem; 
-    /*color: #F0EDE4;*/
+    color: #F0EDE4;
     float: left;
     font-family: "ZTBOskon90s";
     font-size: 1.25rem;
@@ -833,13 +850,6 @@ nav{
 }
 
 /*About Me*/
-.about{
-    background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%), 
-    url(Assets/about-me.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .about-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -849,86 +859,18 @@ nav{
     width: 85%;
 }
 .about-me-title{
-    color: #F0EDE4;
+    color: #0165FC;
     font-family: 'Ade Display';
     font-size: 5.25rem;
 }
 .about-me-paragraph{
-    color: #F0EDE4;
+    color: #0165FC;
     display: flex;
     font-size: 1.25rem;
     grid-column: 1;
     grid-row: 2;
     padding-top: 3rem;
-}
-
-.contact{
-    background:#F0EDE4;
-    margin-bottom: 5rem;
-}
-.contact-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-template-rows: repeat(4, 1fr);
-    margin: 3rem auto 0 auto;
-    width: 85%;
-}
-.contact-header{
-    font-family: "ZTBOskon90s Light Italic";
-    font-size: 3.5rem;
-    font-weight: lighter;
-    grid-column: 1/3;
-}
-.form-container{
-    display: flex;
-    flex-wrap:wrap;
-    grid-column: 1/3;
-    grid-row: 2/5;  
-}
-form{
-    width: 100%;
-}
-label{ 
-    border: 0px;
-    display: flex;
-    margin-bottom: .75rem;
-    width: 100%;
-} 
-.form-container input{
-    border: 0;
-    display: flex;
-    margin-bottom: 1.5rem;
-    padding: .5rem;
-    width: 80%;
-}
-.form-container textarea {  
-    border: 0px;
-    display: flex;
-    width: 80%; 
-    padding: 10px; 
-    resize: none; 
-    height: 10rem; 
-} 
-.form-container button{ 
-    border: 0px; 
-    font-family: 'DM Sans Light';
-    margin-top: 15px; 
-    padding: 10px; 
-    text-align: center; 
-    width: 25%; 
-    background:#0165FC; 
-    color:#F0EDE4; 
-    border-radius: 25px; 
-    cursor: pointer; 
-} 
-#error_message { 
-    color: salmon;
-    margin-bottom: 20px; 
-    padding: 0px; 
-    text-align: center; 
-    font-size: 14px; 
-    text-align: left;
-    transition: all 0.5s ease; 
+    padding-right: 3rem;
 }
 
 .friends-hero{
@@ -1542,6 +1484,11 @@ input[type="radio"]{
         padding-left: 1rem;
         padding-right: 1rem; 
     }
+
+        /* footer */
+        footer{
+            padding: 2rem;
+        }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1575,14 +1522,6 @@ input[type="radio"]{
     .tag-container{
         margin-bottom: 1rem;
     }
-    #instagram-over-blue-sporkle{
-        width: 28%;
-        margin: 3.5rem;
-    }
-    #linkedin-over-blue-sporkle{
-        width: 25%;
-        margin: 4.65rem;
-    }
     .hr-blue-hidden{
         display: block;
         margin-top: 3rem;
@@ -1609,29 +1548,6 @@ input[type="radio"]{
         grid-column: 1/3;
         padding-right: 0;
         padding-top: 1rem;
-    }
-    .contact{
-        margin-bottom: 1rem;
-    }
-    .contact-container{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, auto);
-    }
-    .contact-header{
-        grid-column: 1;
-        grid-row: 1;
-        margin-bottom: 2rem;
-    }
-    .form-container{
-        grid-column: 1;
-        grid-row: 2;
-        margin-bottom: 2rem;
-    }
-    .form-container input{
-        width: 90%;
-    }
-    .form-container textarea{
-        width: 90%;
     }
     .social-links{
         grid-column: 1;
@@ -1670,11 +1586,26 @@ input[type="radio"]{
 }
 
 @media only screen and (max-width: 480px)  {
+    .home-hero{
+        background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.60) 00%), 
+    url(Assets/feature.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    }
     .px-2{
         padding: 0rem 1rem;
     }
+    .ml-5{
+        margin-left: 0rem;
+    }
+    .nav-menu li a {
+        font-size: 2.5rem;
+    }
     .name-hero-container img{
         margin: 2rem;
+        padding-top: 3rem;
     }
     .hero-subhead{
        margin: 0 1.25rem 0rem 1.25rem;
@@ -1709,13 +1640,14 @@ input[type="radio"]{
         padding-right: 1rem;
         padding-top: 1rem;
     }
-    .side-projects-header{
-        font-size: 6rem;
+    .design-treat{
+        padding: 0rem;
     }
-    .side-projects-subheader{
-        font-size: 1.5rem;
-        text-align: center;
-        padding: 0 .25rem 0 .25rem;
+    .dt-header{
+        font-size: 2.4rem;
+    }
+    .about-me-paragraph{
+        margin-bottom: 2rem;
     }
     .page-header{
         font-size: 5rem;
@@ -1760,20 +1692,15 @@ input[type="radio"]{
     .gallery .photo-column {
         width: 100%;
     }
-    .two-col-grid{
+    .two-col-grid, .two-col-grid-wide, .two-col-grid-gap, .two-col-40-60, 
+    .two-col-65-35, .two-col-65-35-wide, .three-col-grid, .three-col-grid-90,
+    .about-container{
         grid-template-columns: 1fr;
     }
-    .two-col-grid-wide{
-        grid-template-columns: 1fr;
-    }
-    .two-col-grid-gap{
-        grid-template-columns: 1fr;
-    }
-    .two-col-65-35{
-        grid-template-columns: 1fr;
-    }
-    .two-col-65-35-wide{
-        grid-template-columns: 1fr;
+    .three-col-grid-90{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .two-col-65-35 div{
         max-width: 100%;
@@ -1792,9 +1719,6 @@ input[type="radio"]{
     }
     .center-button{
         width: 60%;
-    }
-    .project-footer{
-        display: none;
     }
 
     /* ou.edu/gradcollege */
@@ -1869,6 +1793,27 @@ input[type="radio"]{
         padding-left: 1rem;
     }
 
+    /* Grad Portal */
+    #portal-video{
+        height: 13rem;
+    }
+    #blue-bars{
+        height: 13rem;
+        margin-bottom: 0rem;
+    }
+    #celebration-skyline{
+        height: 10rem;
+    }
+    .portal-video-container{
+        height: 20rem;
+    }
+    .portal-mockup-container > img{
+        margin-top: 2rem;
+    }
+    .caption{
+        width: 90%;
+    }
+
     /* Features */
     .project-details{
         grid-template-columns: 1fr;
@@ -1888,7 +1833,9 @@ input[type="radio"]{
 
     /* footer */
     footer{
-        margin: 0rem 0rem 0rem 0rem;
+        margin: 3rem auto 0rem auto;
+        padding: 0rem;
+        height: fit-content;
     }
     footer > div > div{
         margin: 3rem 0rem 0rem 0rem;
@@ -1901,6 +1848,14 @@ input[type="radio"]{
         font-size: 4rem;
     }
 
+    #footer-buttons{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    #footer-buttons a{
+        margin-bottom: 1rem;
+    }
 
 }
 
