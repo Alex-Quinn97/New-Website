@@ -894,7 +894,7 @@ nav{
     grid-template-rows: auto;
     margin: auto;
     width: 75%;
-    max-height: 285px;
+    min-height: 300px;
     margin-top: 2rem;
 }
 .friend-card h2{
@@ -913,6 +913,9 @@ nav{
     background-color: #0165FC;
     border-radius: 0 0 100px 0;/* Curve only the top-left corner */
     width: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .5fr .5fr;
 }
 .friend-info h2{
     width: 50%;
@@ -931,7 +934,7 @@ nav{
     object-fit: cover;
     border-radius: 100px 0 0 0; /* Curve only the top-left corner */
 }
-.friend-image .btn-blue {
+.friend-image .button {
     position: absolute;
     top: 90%;
     left: 50%;
@@ -939,8 +942,9 @@ nav{
     z-index: 2;
     width: 10rem;
     font-size: .75rem;
+    text-align: center;
 } 
-.friend-image .btn-blue:hover {
+.friend-image .button:hover {
     background-color: black;
 }
 
@@ -1571,15 +1575,25 @@ input[type="radio"]{
     .friends-hero{
         width: 90%;
     }
+    .friend-info{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .friend-info .tag-container{
+        display: none;
+    }
     .friend-info h2{
+        display: flex;
+        align-items: center;
         font-size: 3rem;
     }
     .friend-info p{
         font-size: .85rem;
     }
-    .friend-image .btn-blue{
+    .friend-image .button{
         width: 9rem;
-        font-size: .65rem;
+        font-size: .5rem;
+        
     }
     .photo-hero{
         height: 35vh;
@@ -1663,17 +1677,20 @@ input[type="radio"]{
         margin-bottom: 2rem;
     }
     .page-header{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .friends-hero{
         width: 90%;
+    }
+    .friend-card{
+        min-height: 0;
     }
     .friend-info{
         width: 50%;
         border-radius: 0 0 50px 0;
     }
     .friend-info h2{
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
     .friend-info p{
         display: none;
@@ -1684,9 +1701,10 @@ input[type="radio"]{
     .friend-image img{
         border-radius: 50px 0 0 0;
     }
-    .friend-image .btn-blue{
-        width: 9rem;
+    .friend-image .button{
+        width: 7rem;
         font-size: .65rem;
+        top: 85%;
     }
     .photo-hero{
         height: 35vh;
