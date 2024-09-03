@@ -1244,6 +1244,20 @@ input[type="radio"]{
     color: #0165FC;
 }
 
+/*Service Design */
+.p-sdb-final-product{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.sdb-current-system{
+    padding-right: 5rem;
+}
+.sdb-ppaop{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+}
+
 /*delete later*/
 .center-button{
     width: 20%;
@@ -1726,10 +1740,6 @@ input[type="radio"]{
     }
 
     /* Service Design */
-    .p-sdb-final-product{
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-    }
     .div-sdb-number-pairing{
         margin-top: 0rem;
     }
