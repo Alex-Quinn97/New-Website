@@ -50,14 +50,24 @@ hr{
 a{
     color: #0165FC;
 }
-a:visited{
-    color: #0165FC;
-}
+
 .button{
     background-color: #F0EDE4;
     border: 1px solid #F0EDE4;
     border-radius: 2rem; 
     color: #0165FC;
+    font-family: "DM Sans";
+    font-size: .8rem;
+    margin: 0.5rem 0.5rem 10rem 0rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    text-decoration: none;
+    transition: 350ms ease-in-out;
+}
+.button-invert{
+    background-color: #000814;
+    border: 1px solid #000814;
+    border-radius: 2rem; 
+    color: #F0EDE4;
     font-family: "DM Sans";
     font-size: .8rem;
     margin: 0.5rem 0.5rem 10rem 0rem;
@@ -104,6 +114,12 @@ footer div>div>p{
 }
 
 /* Utility */
+.yellow-background{
+    background-color: #DFFF00 !important;
+}
+.black-txt{
+    color: #000814;
+}
 .img-container{
     display: inline-block;
 }
@@ -667,7 +683,7 @@ nav{
 .nav-menu li a{
     font-family: "Ade Display";
     font-size: 1rem;
-    padding: 0rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     position: relative;
     text-decoration: none;
 }
