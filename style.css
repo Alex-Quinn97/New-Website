@@ -767,9 +767,6 @@ nav{
 .projects{
     background:#F0EDE4;
 }
-.project-list{
-    padding-top: 5.25rem;
-}
 .project{
     border: 1px solid #0165FC;
     display: grid;
