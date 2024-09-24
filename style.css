@@ -710,7 +710,7 @@ nav{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 82.5vh;
+    min-height: 82.5vh;
 }
 .name-hero-container{
     display: block;
@@ -766,6 +766,9 @@ nav{
   
 .projects{
     background:#F0EDE4;
+}
+.project-list{
+    padding-top: 5.25rem;
 }
 .project{
     border: 1px solid #0165FC;
