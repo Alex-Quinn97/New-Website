@@ -599,7 +599,7 @@ footer div>div>p{
     display: block;
     max-width: 100%;
     height: auto;
-    border-radius: 1rem;
+    border-radius: .5rem;
 }
 .basic-img-square{
     width: 100%;
