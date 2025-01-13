@@ -140,6 +140,9 @@ footer div>div>p{
 .blue-background{
     background: #0165FC;
 }
+.red-background{
+    background: #fc0101;
+}
 .width-60{
     width: 60%;
 }
@@ -398,6 +401,9 @@ footer div>div>p{
 }
 
 /* Padding */
+.p-2{
+    padding: 2rem;
+}
 .pb-1{
     padding-top: 1rem;
 }
@@ -589,7 +595,8 @@ footer div>div>p{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    width: 80%;
+    grid-gap: 20px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1278,6 +1285,14 @@ input[type="radio"]{
     margin-left: auto;
     margin-right: auto;
     margin-top: 3rem;
+}
+.sdb-card{
+    border: 1px solid #0165FC;
+    border-radius: 1rem;
+}
+.sdb-icon{
+    width: auto;
+    max-width: 10rem;
 }
 
 /*delete later*/
