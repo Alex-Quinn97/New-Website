@@ -366,6 +366,12 @@ footer div>div>p{
     margin-top: auto;
     margin-bottom: auto;
 }
+.mr-auto{
+    margin-right: auto;
+}
+ml-auto{
+    margin-left: auto;
+}
 .ml-2{
     margin-left:2rem;
 }
@@ -460,6 +466,18 @@ footer div>div>p{
     background-color: #0165FC;
     border: none;
     font-family: "DM Sans Bold";
+    height: auto;
+    padding: 8px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.btn-blue-big{
+    color: #F0EDE4;
+    background-color: #0165FC;
+    border: none;
+    font-family: "DM Sans Bold";
+    font-size: 1.5rem;
     height: auto;
     padding: 8px 20px;
     text-align: center;
