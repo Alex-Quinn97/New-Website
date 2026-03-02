@@ -1451,14 +1451,12 @@ input[type="radio"]{
         position: absolute;
         top: 100%;
         left: -100%;
-        /* span the rest of the viewport so the background moves with nav when scrolling */
-        bottom: 0;
+        height: 100vh;
         flex-direction: column;
         background-color: #F0EDE4;
         width: 100%;
-        border-radius: 10px;
         text-align: center;
-        transition: 1s ease-in-out;
+        transition: 800ms ease-in-out;
         justify-content: flex-start;
     }
     .alternate-background{
@@ -1475,6 +1473,7 @@ input[type="radio"]{
     }
     .nav-menu.active {
         left: 0;
+        background-color: #F0EDE4;
     }
     .hamburger {
         display: block;
