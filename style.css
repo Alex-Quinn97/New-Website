@@ -1451,7 +1451,8 @@ input[type="radio"]{
         position: absolute;
         top: 100%;
         left: -100%;
-        height: 100%;
+        /* span the rest of the viewport so the background moves with nav when scrolling */
+        bottom: 0;
         flex-direction: column;
         background-color: #F0EDE4;
         width: 100%;
